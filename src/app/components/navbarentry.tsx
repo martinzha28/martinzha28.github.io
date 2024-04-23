@@ -1,4 +1,4 @@
-export default function Entry(props: {
+export default function NavbarEntry(props: {
     image: string | JSX.Element;
     alt: string;
     text: string;

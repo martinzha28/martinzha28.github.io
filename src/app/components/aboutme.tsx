@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-row gap-10 ">
+    <div id="About Me Section" className="flex flex-row gap-10 ">
       <img
         className="object-scale-down max-h-full m-auto h-96 rounded-lg border-4"
         src="../../../hack-the-north-headshot.jpg"
@@ -55,7 +55,7 @@ const TypeComponent = () => {
       ]}
       wrapper="span"
       speed={70}
-      style={{ fontSize: "2em", display: "inline-block", color: "#729757" }}
+      style={{ fontSize: "2rem", display: "inline-block", color: "#729757" }}
       repeat={Infinity}
     />
   );

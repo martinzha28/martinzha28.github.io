@@ -7,7 +7,7 @@ export default function Sidebar() {
   const external = { color: "#848484", fontSize: "30px" };
   const profile = { color: "#FFFFFF", fontSize: "30px" };
   return (
-    <aside className="bg-sidebar-dark h-[calc(100vh-24px)] w-24 py-3 flex flex-col flex-nowrap items-center fill-navbar-gray justify-between">
+    <aside id="Sidebar" className="bg-sidebar-dark h-[calc(100vh-24px)] w-24 py-3 flex flex-col flex-nowrap items-center fill-navbar-gray justify-between">
       <div className="gap-5 flex flex-col flex-nowrap items-center w-full">
         <div className="flex flex-row border-l-2 border-white w-full justify-center">
           <CgProfile style={profile} />

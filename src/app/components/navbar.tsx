@@ -1,34 +1,34 @@
 import { FaChevronDown } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 
-import Entry from "./entry";
+import NavbarEntry from "./navbarentry";
 
 export default function Navbar() {
   return (
-    <aside className="bg-navbar-dark h-[calc(100vh-24px)] w-4/12">
+    <aside id="Navagation Bar" className="bg-navbar-dark h-[calc(100vh-24px)] w-4/12">
       <div className="text-navbar-gray font-mono pl-3 pt-2">NAVAGATION</div>
       <div className=" font-bold pl-1 pt-2">
         <Folder image={<FaChevronDown />} text="MartinZhao.tech" />
       </div>
       <div className=" pl-6 font-thin">
-        <Entry
+        <NavbarEntry
           image={<IoInformationCircleOutline color="#559AB9" size="16px"/>}
           alt="Information Symbol"
           text="README.md"
         />
         <Folder image={<FaChevronDown />} text="past-experiences" />
         <div className="border-l-2 border-navbar-gray pl-2">
-          <Entry
+          <NavbarEntry
             image="../../../marsh-logo.jpg"
             alt="Marsh McLennan Logo"
             text="MarshMcLennan.mmc"
           />
-          <Entry
+          <NavbarEntry
             image="../../../innovation-lab-logo.jpg"
             alt="WSIB Innovation Labs Logo"
             text="InnovationLabs.wsib"
           />
-          <Entry
+          <NavbarEntry
             image="../../../genesys-logo.jpg"
             alt="Genesys Cloud Services Logo"
             text="Genesys.cloud"

@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import AboutMe from "./components/aboutme";
 import WorkExperience from "./components/workexperience";
 import Tabs from "./components/tabs";
+import Projects from "./components/projects";
 
 export default function Page() {
   return (
@@ -13,9 +14,10 @@ export default function Page() {
         <Navbar />
         <div className="h-[calc(100vh-24px)] flex flex-col">
           <Tabs />
-          <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto p-16 gap-20">
+          <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto py-8 px-16 gap-4">
             <AboutMe />
             <WorkExperience />
+            <Projects />
           </div>
         </div>
       </div>
@@ -25,6 +27,15 @@ export default function Page() {
   );
 }
 
+
+// Dictionary or Array.filter
+// fetch waterloo.graduation then leave
+// while (!hobbies.length)
+
+
+// Ideas for improvement:
+
+// Skeleton and graceful degradation for image 
 // Light Mode
 // Mobile
 // Line count
