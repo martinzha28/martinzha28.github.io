@@ -1,0 +1,32 @@
+{
+  "educationlist": [
+    {
+      "logo": "../../../logos/lund-logo.png",
+      "filename": "Lund.swe",
+      "name": "Lund University (Exchange)",
+      "program": "Computer Science and Engineering",
+      "duration": "Expected 2025",
+      "points": [
+      ]
+    },
+    {
+      "logo": "../../../logos/uw-logo.png",
+      "filename": "UWaterloo.ca",
+      "name": "University of Waterloo",
+      "program": "Bachelor of Computer Science, Honors Co-op",
+      "duration": "September 2021 - Expected 2026",
+      "points": [
+        "Software Engineering Specialization",
+        "President's Scholarship of Distinction"
+      ]
+    },
+    {
+      "logo": "../../../logos/uts-logo.png",
+      "filename": "UTS.ca",
+      "name": "University of Toronto Schools",
+      "program": "High School Diploma",
+      "duration": "September 2015 - Expected 2021",
+      "points": ["Admission Average: 97.0%", "UTS Math Team, Physics Club"]
+    }
+  ]
+}

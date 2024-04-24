@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex flex-row items-center gap-2">
         <span> Made with </span>
         <FaRegHeart />
-        <span> using Next.js, React.js, Tailwind </span>
+        <span> using Next.js, React.js, Tailwind CSS </span>
       </div>
 
       <div className="flex flex-row items-center gap-2">

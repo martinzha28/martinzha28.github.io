@@ -1,0 +1,37 @@
+{
+  "worklist": [
+    {
+      "logo": "../../../logos/mmc-logo.jpg",
+      "filename": "MarshMcLennan.mmc",
+      "image": "../../../images/mmc-team.jpg",
+      "position": "Software Developer",
+      "company": "Marsh McLennan",
+      "location": "Toronto, ON",
+      "duration": "December 2023 - May 2024",
+      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
+      "techstack": ["React.js", "MongoDB", "Express.js", "Node.js", "Next.js", "Cypress", "SASS", "Storybook.js"]
+    },
+    {
+      "logo": "../../../logos/innovation-lab-logo.jpg",
+      "filename": "Innovation.wsib",
+      "image": "../../../images/wsib-team.jpg",
+      "position": "Full Stack Developer",
+      "company": "WSIB Innovation Labs",
+      "location": "Kitchener, ON",
+      "duration": "May 2023 - August 2023",
+      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
+      "techstack": ["a", "b", "c", "d", "e", "f"]
+    },
+    {
+      "logo": "../../../logos/genesys-logo.jpg",
+      "filename": "Genesys.cloud",
+      "image": "../../../images/genesys.jpg",
+      "position": "QA Intern",
+      "company": "Genesys Cloud Services",
+      "location": "Markham, ON",
+      "duration": "May 2022 - August 2022",
+      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
+      "techstack": ["a", "b", "c", "d", "e", "f"]
+    }
+  ]
+}

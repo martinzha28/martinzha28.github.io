@@ -5,20 +5,23 @@ import { TypeAnimation } from "react-type-animation";
 export default function AboutMe() {
   return (
     <div id="About Me Section" className="flex flex-row gap-10 ">
-      <img
-        className="object-scale-down max-h-full m-auto h-96 rounded-lg border-4"
-        src="../../../hack-the-north-headshot.jpg"
-        alt="Headshot"
-      />
-      <div className="grow flex flex-col gap-5 whitespace-pre-line">
+      <div className="w-1/3">
+        <img
+          className="w-full aspect-square rounded-lg border-4 object-contain"
+          src="../../../images/hack-the-north-headshot.jpg"
+          alt="Headshot"
+        />
+      </div>
+
+      <div className="w-2/3 flex flex-col gap-5 whitespace-pre-line">
         <div className="flex flex-row flex-wrap text-3xl">
-          <p className="text-[#689CD4]"> const&nbsp;</p>
-          <p className="text-[#70C1FD]"> name&nbsp;</p>
-          <p className="text-[#FFFFFF]"> :&nbsp;</p>
-          <p className="text-[#6EC7B0]"> String&nbsp;</p>
-          <p className="text-[#FFFFFF]"> =&nbsp;</p>
-          <p className="text-[#C5927A]"> "Martin Zhao" </p>
-          <p className="text-[#FFFFFF]"> ; </p>
+          <p className="text-let-blue"> const&nbsp;</p>
+          <p className="text-variable-blue"> name&nbsp;</p>
+          <p className="text-white"> :&nbsp;</p>
+          <p className="text-type-dec-cyan"> String&nbsp;</p>
+          <p className="text-white"> =&nbsp;</p>
+          <p className="text-string-orange"> "Martin Zhao" </p>
+          <p className="text-white"> ; </p>
         </div>
         <TypeComponent />
         <p>
@@ -44,14 +47,14 @@ const TypeComponent = () => {
   return (
     <TypeAnimation
       sequence={[
-        "// Welcome to my Personal Portfolio! \n",
-        1200,
+        "// Welcome to my Personal Portfolio! \n //",
+        1500,
         "// Welcome to my Personal Portfolio! \n// Computer Science Student.",
-        700,
+        1100,
         "// Welcome to my Personal Portfolio! \n// Full-Stack Developer.",
-        700,
+        1100,
         "// Welcome to my Personal Portfolio! \n// AWS Certified.",
-        700,
+        1100,
       ]}
       wrapper="span"
       speed={70}
