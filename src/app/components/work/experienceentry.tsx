@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import Image from 'next/image'
 
 export type WorklistProps = {
   image: string;
@@ -31,7 +32,7 @@ export default function ExperienceEntry({
     <div id={company} className="flex flex-col">
       <div className="flex flex-row gap-4 justify-items-end w-full">
         <div className="w-1/3">
-          <img
+          <Image
             className="aspect-square rounded-lg border-4 object-contain"
             src={image}
             alt={company + " picture"}
