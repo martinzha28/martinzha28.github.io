@@ -13,7 +13,7 @@
       "logo": "../../../logos/uw-logo.png",
       "filename": "UWaterloo.ca",
       "name": "University of Waterloo",
-      "program": "Bachelor of Computer Science, Honors Co-op",
+      "program": "Computer Science, Honors Co-op",
       "duration": "September 2021 - Expected 2026",
       "points": [
         "Software Engineering Specialization",
@@ -25,7 +25,7 @@
       "filename": "UTS.ca",
       "name": "University of Toronto Schools",
       "program": "High School Diploma",
-      "duration": "September 2015 - Expected 2021",
+      "duration": "September 2015 - June 2021",
       "points": ["Admission Average: 97.0%", "UTS Math Team, Physics Club"]
     }
   ]

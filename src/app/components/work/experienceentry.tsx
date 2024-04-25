@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
 export type WorklistProps = {
   image: string;
@@ -37,52 +38,57 @@ export default function ExperienceEntry({
           />
         </div>
         <div
-          className="flex flex-col gap-5 px-4 whitespace-pre-line text-2xl w-2/3 hover:bg-hover-dark rounded-lg"
+          className="flex flex-col px-4 whitespace-pre-line w-2/3 hover:bg-hover-dark rounded-lg"
           onClick={handleClick}
         >
-          <p className="text-class-yellow">&#123;{/* Left Curly Brace */}</p>
-          <JsonLine name="Position" value={position} />
-          <JsonLine name="Company" value={company} />
-          <JsonLine name="Location" value={location} />
-          <JsonLine name="Duration" value={duration} lastLine={true} />
+          <div className="flex flex-row text-2xl items-center">
+            {expanded ? <FaChevronDown /> : <FaChevronRight />}
+            <p className="text-class-yellow"> &nbsp;{company}&nbsp;</p>
+            <p className="text-brackets-pink"> ()&nbsp;</p>
+            <p className="text-class-yellow">
+              {" "}
+              &#123; {/* Left Curly Brace */}
+            </p>
+          </div>
 
-          <p className="text-class-yellow">&#125;{/* Right Curly Brace */}</p>
+          <div className="pl-16 pt-1">
+            {!expanded && (
+              <p className="text-comment-green"> // Click to Learn More </p>
+            )}
+            {expanded && (
+              <>
+                <VarLine name="Position" value={position} />
+                <VarLine name="Location" value={location} />
+                <VarLine name="Duration" value={duration} />
+                <br />
+                {expanded && (
+                  <div className="flex flex-col pt-2 text-comment-green">
+                    {points.map((point: string) => {
+                      return <p> // {point} </p>;
+                    })}
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+
+          <p className="text-class-yellow text-2xl pl-10">
+            {" "}
+            &#125; {/* Right Curly Brace */}{" "}
+          </p>
         </div>
       </div>
-
-      {expanded && (
-        <div className="flex flex-row gap-2 pt-2">
-          {techstack.map((technology: string) => {
-            return <p> {technology} </p>;
-          })}
-        </div>
-      )}
-      {expanded && (
-        <div className="flex flex-col pt-2">
-          {points.map((point: string) => {
-            return <p> - {point} </p>;
-          })}
-        </div>
-      )}
     </div>
   );
 }
 
-function JsonLine(props: { name: string; value?: string; lastLine?: boolean }) {
-  const lastLine = props.lastLine ?? false;
+function VarLine(props: { name: string; value?: string }) {
   return (
-    <div className="flex flex-row flex-wrap pl-8">
+    <div className="flex flex-row flex-wrap">
       <p className="text-variable-blue">{props.name}</p>
-      <p className="text-white">&nbsp;:&nbsp;</p>
-      <p className="text-string-orange">{props.value}</p>
-      {!lastLine && <p className="text-white"> , </p>}
+      <p className="text-white">&nbsp;=&nbsp;</p>
+      <p className="text-string-orange">{'"' + props.value + '"'}</p>
+      <p className="text-white">;</p>
     </div>
   );
 }
-
-/* <div>
-        <span className="font-bold text-2xl">What I Worked On</span>
-      </div>
-      <div>
-        <span className="font-bold text-2xl">Tech Stack Used</span>
-      </div> */

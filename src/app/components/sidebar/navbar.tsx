@@ -77,7 +77,7 @@ export default function Navbar() {
           })}
         </div>
 
-        <Folder image={<FaChevronRight />} text="tech-stack" section="" />
+        <Folder image={<FaChevronRight />} text="tech-stack" section="Tech Stack Section" />
         <Folder image={<FaChevronRight />} text="hobbies" section="" />
       </div>
     </aside>
