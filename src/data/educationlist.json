@@ -1,7 +1,7 @@
 {
   "educationlist": [
     {
-      "logo": "public/logos/lund-logo.png",
+      "logo": "../../logos/lund-logo.png",
       "filename": "Lund.swe",
       "name": "Lund University (Exchange)",
       "program": "Computer Science and Engineering",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "logo": "public/logos/uw-logo.png",
+      "logo": "../../logos/uw-logo.png",
       "filename": "UWaterloo.ca",
       "name": "University of Waterloo",
       "program": "Computer Science, Honors Co-op",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "logo": "public/logos/uts-logo.png",
+      "logo": "../../logos/uts-logo.png",
       "filename": "UTS.ca",
       "name": "University of Toronto Schools",
       "program": "High School Diploma",
