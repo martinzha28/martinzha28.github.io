@@ -1,7 +1,7 @@
 {
   "worklist": [
     {
-      "logo": "../../logos/mmc-logo.jpg",
+      "logo": "../../../logos/mmc-logo.jpg",
       "filename": "MarshMcLennan.mmc",
       "image": "../../images/mmc-team.jpg",
       "position": "Software Developer",
@@ -23,9 +23,9 @@
       "techstack": ["a", "b", "c", "d", "e", "f"]
     },
     {
-      "logo": "../../logos/genesys-logo.jpg",
+      "logo": "public/logos/genesys-logo.jpg",
       "filename": "Genesys.cloud",
-      "image": "../../images/genesys.jpg",
+      "image": "public/images/genesys.jpg",
       "position": "QA Intern",
       "company": "Genesys Cloud Services",
       "location": "Markham, ON",
