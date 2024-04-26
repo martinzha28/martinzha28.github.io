@@ -23,9 +23,9 @@
       "techstack": ["a", "b", "c", "d", "e", "f"]
     },
     {
-      "logo": "public/logos/genesys-logo.jpg",
+      "logo": "/public/logos/genesys-logo.jpg",
       "filename": "Genesys.cloud",
-      "image": "public/images/genesys.jpg",
+      "image": "/public/images/genesys.jpg",
       "position": "QA Intern",
       "company": "Genesys Cloud Services",
       "location": "Markham, ON",
