@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
-import Image from 'next/image'
+import Image from "next/image";
 
 export type WorklistProps = {
   image: string;
@@ -62,13 +62,20 @@ export default function ExperienceEntry({
                 <VarLine name="Location" value={location} />
                 <VarLine name="Duration" value={duration} />
                 <br />
-                {expanded && (
-                  <div className="flex flex-col pt-2 text-comment-green">
-                    {points.map((point: string) => {
-                      return <p> // {point} </p>;
-                    })}
-                  </div>
-                )}
+
+                <div className="flex flex-row flex-wrap text-import-pink gap-4">
+                  {techstack.map((tech: string) => {
+                    return <p> {tech} </p>;
+                  })}
+                </div>
+
+                <br />
+
+                <div className="flex flex-col pt-2 text-comment-green">
+                  {points.map((point: string) => {
+                    return <p> // {point} </p>;
+                  })}
+                </div>
               </>
             )}
           </div>

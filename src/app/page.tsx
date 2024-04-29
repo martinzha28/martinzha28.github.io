@@ -32,22 +32,14 @@ export default function Page() {
   );
 }
 
-// Dictionary or Array.filter OR import * from "./techstack";
-// while (!hobbies.length)
 
 // Todo List:
-// Projects + TechStack on Figma then implement
-// Idea for how to display work information
+// Project logos
 // Nav/table of contents that scrolls as you go down
 // Animate on startup
-
-// Ideas:
-// Flip cards: https://www.npmjs.com/package/react-card-flip
 // Click image to expand
 // Skeleton and graceful degradation for image: https://www.npmjs.com/package/react-loading-skeleton
 
 // Complicated stuff
-
 // Light Mode https://tailwindcss.com/docs/dark-mode
 // Mobile https://tailwindcss.com/docs/responsive-design
-// Line count

@@ -42,7 +42,7 @@ export default function ProjectEntry({
         src={image}
         alt={name}
       />
-      <div className="flex flex-row text-import-pink gap-4">
+      <div className="flex flex-row text-import-pink gap-4 flex-wrap">
         {techstack.map((tech: string) => {
           return <p> {tech} </p>;
         })}
