@@ -2,15 +2,15 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FaChevronDown, FaChevronRight, FaGithub } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import importededucationlist from "../../../data/educationlist.json";
 import importedworklist from "../../../data/worklist.json";
+import importedprojectlist from "../../../data/projectlist.json";
 
 import NavbarEntry from "./navbarentry";
 
 export default function Navbar() {
-
   return (
     <aside
       id="Navagation Bar"
@@ -57,6 +57,26 @@ export default function Navbar() {
           section="Projects Section"
         />
 
+        <div
+          id="Project Dropdown"
+          className="border-l-2 border-navbar-gray pl-2"
+        >
+          <NavbarEntry
+                logo={<FaGithub />}
+                alt={importedprojectlist.featured.name}
+                text={importedprojectlist.featured.filename}
+              />
+          {importedprojectlist.projectlist.map((project) => {
+            return (
+              <NavbarEntry
+                logo={<FaGithub />}
+                alt={project.name}
+                text={project.filename}
+              />
+            );
+          })}
+        </div>
+
         <Folder
           image={<FaChevronDown />}
           text="education"
@@ -77,7 +97,11 @@ export default function Navbar() {
           })}
         </div>
 
-        <Folder image={<FaChevronRight />} text="tech-stack" section="Tech Stack Section" />
+        <Folder
+          image={<FaChevronRight />}
+          text="tech-stack"
+          section="Tech Stack Section"
+        />
         <Folder image={<FaChevronRight />} text="hobbies" section="" />
       </div>
     </aside>

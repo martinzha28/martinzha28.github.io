@@ -11,8 +11,9 @@ export default function TechStack() {
         <p className="text-string-orange"> "./brain/important" </p>
         <p className="text-white"> ; </p>
       </div>
+
       <div className="flex flex-col gap-2">
-        <p> Languages: </p>
+        <p className="text-2xl text-comment-green"> Languages: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.languages.map((badge) => {
             return <img className="" src={badge.link} />;
@@ -21,7 +22,7 @@ export default function TechStack() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <p> Libraries and Framworks: </p>
+        <p className="text-2xl text-comment-green"> Libraries and Frameworks: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.frameworks.map((badge) => {
             return <img className="" src={badge.link} />;
@@ -30,7 +31,7 @@ export default function TechStack() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <p> Development Tools: </p>
+        <p className="text-2xl text-comment-green"> Development Tools: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.devtools.map((badge) => {
             return <img className="" src={badge.link} />;

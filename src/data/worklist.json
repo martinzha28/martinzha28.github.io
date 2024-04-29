@@ -8,7 +8,10 @@
       "company": "Marsh McLennan",
       "location": "Toronto, ON",
       "duration": "December 2023 - May 2024",
-      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
+      "points": ["First experience with OpenAI API to create back-end BPMN generator", 
+      "Created new features on the \"Case Management Platform\" using Express, React", 
+      "Began development of a front-end component library using Storybook, MUI",
+      "Researched and documented software architectures"],
       "techstack": ["React.js", "MongoDB", "Express.js", "Node.js", "Next.js", "Cypress", "SASS", "Storybook.js"]
     },
     {
@@ -19,8 +22,11 @@
       "company": "WSIB Innovation Labs",
       "location": "Kitchener, ON",
       "duration": "May 2023 - August 2023",
-      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
-      "techstack": ["a", "b", "c", "d", "e", "f"]
+      "points": ["Worked on scanning audiogram form using Azure OCR", 
+      "Used React.js and Tailwind CSS to create front-end website", 
+      "Developed endpoints to connect to Azure Database",
+      "Tried creating a proof-of-concept for a Generative AI chatbot"],
+      "techstack": ["Azure", "React.js", "Express.js", "Flask", "Python", "Node.js", "TypeScript", "PrivateGPT"]
     },
     {
       "logo": "/public/logos/genesys-logo.jpg",
@@ -30,8 +36,10 @@
       "company": "Genesys Cloud Services",
       "location": "Markham, ON",
       "duration": "May 2022 - August 2022",
-      "points": ["Worked on ABC", "Worked on DEF", "WOrked on GHI"],
-      "techstack": ["a", "b", "c", "d", "e", "f"]
+      "points": ["First-ever experience with large codebase! Got to work on refactoring old code",
+      "Gathered ticket status, documented bugs, and tracked product information",
+      "Automated queries for SQL and exported data into nice-looking Excel spreadsheets"],
+      "techstack": ["Java", "Selenium", "Bash", "Excel", "Microsoft SSMS", "Docker", "Confluence"]
     }
   ]
 }

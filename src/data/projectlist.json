@@ -1,11 +1,61 @@
 {
+  "featured": {
+    "image": "../../projects/uwss.png",
+    "filename": "UWSS",
+    "name": "U Wanna Study Somewhere?",
+    "subtitle" : "",
+    "techstack": [
+      "AWS Lambda",
+      "GraphQL",
+      "MySQL",
+      "Next.js",
+      "React.js",
+      "Bootstrap"
+    ],
+    "blurb": "Full-stack application to crowd-source reviews for common UW study spots! Future features for account and identity management, AI-based reccomendations, and mobile app integration.",
+    "link": "",
+    "github": ""
+  },
   "projectlist": [
     {
-      "image": "public/logos/lund-logo.png",
-      "filename": "Lund.swe",
-      "name": "Lund University (Exchange)",
-      "techstack": [],
-      "points": []
+      "image": "../../projects/personal-portfolio.png",
+      "filename": "Personal Portfolio",
+      "name": "Personal Portfolio ",
+      "subtitle" : "This site!",
+      "techstack": ["Next.js", "React.js", "Talwind CSS"],
+      "blurb": "Built website completely from scratch to improve my React and Tailwind skills. The content is dynamically generated (no hardcoded values) as well as support for animations, light mode, and mobile view.",
+      "link": "https://martinzha28.github.io/personal-website/",
+      "github": "https://github.com/martinzha28/personal-website"
+    },
+    {
+      "image": "../../projects/chess.jpg",
+      "filename": "Chess",
+      "name": "Chess",
+      "subtitle" : "OOP final project",
+      "techstack": ["C++", "Linux", "Bash Scripting"],
+      "blurb": "Game of chess using object-oriented concepts. Features include multiplayer and computer options, setup mode, and test suites for automatic testing.",
+      "link": "",
+      "github": "https://github.com/martinzha28/CS246_Chess"
+    },
+    {
+      "image": "../../projects/hack-mit.png",
+      "filename": "Trip Tracker",
+      "name": "Trip Tracker",
+      "subtitle" : "HackMIT",
+      "techstack": ["React.js", "Google Map API", "Node.js", "R"],
+      "blurb": "This app automatically tracks travel methods and emissions reduced. It features leaderboards for reducing carbon emissions and provides insights into personal travel habits.",
+      "link": "",
+      "github": "https://github.com/martinzha28/Hack-MIT"
+    },
+    {
+      "image": "../../projects/hack-the-north.png",
+      "filename": "MonitUr Time",
+      "name": "MonitUr Time",
+      "subtitle" : "Hack the North",
+      "techstack": ["Google Manifest V3", "JavaScript", "HTML", "CSS"],
+      "blurb": "Chrome extension with the purpose of tracking daily Chrome activity. Measurements like toxonomy, how long you spend on each website, and your most popular websites are all tracked in the background which we can view using a popup.",
+      "link": "",
+      "github": "https://github.com/Nada-Elhossiny/MonitUr-time"
     }
   ]
 }
