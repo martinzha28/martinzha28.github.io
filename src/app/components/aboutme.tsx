@@ -8,7 +8,7 @@ export default function AboutMe() {
     <div id="About Me Section" className="flex flex-row gap-10 ">
       <div className="w-1/3 aspect-square rounded-lg border-4 object-contain">
         <Image
-          src="/images/hack-the-north-headshot.jpg"
+          src="/hack-the-north-headshot.jpg"
           alt="Headshot"
           width={500}
           height={500}
