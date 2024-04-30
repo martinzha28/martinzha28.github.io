@@ -32,10 +32,11 @@ export default function ExperienceEntry({
     <div id={company} className="flex flex-col">
       <div className="flex flex-row gap-4 justify-items-end w-full">
         <div className="w-1/3">
-          <img
+          <Image
             className="aspect-square rounded-lg border-4 object-contain border-white"
             src={image}
             alt={company + " picture"}
+            loading="lazy"
           />
         </div>
         <div
