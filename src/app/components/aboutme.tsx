@@ -9,7 +9,7 @@ export default function AboutMe() {
       <div className="w-1/3">
         <img
           className="aspect-square rounded-lg border-4 object-contain border-white"
-          src="/hack-the-north-headshot.jpg"
+          src="hack-the-north-headshot.jpg"
           alt="Headshot"
         />
       </div>
