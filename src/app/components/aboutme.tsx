@@ -7,11 +7,10 @@ export default function AboutMe() {
   return (
     <div id="About Me Section" className="flex flex-row gap-10 ">
       <div className="w-1/3">
-        <Image
+        <img
           className="aspect-square rounded-lg border-4 object-contain border-white"
           src="hack-the-north-headshot.jpg"
           alt="Headshot"
-          loading="lazy"
         />
       </div>
 

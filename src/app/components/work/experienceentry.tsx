@@ -27,17 +27,15 @@ export default function ExperienceEntry({
   const handleClick = () => {
     changeExpand(!expanded);
   };
-
+  console.log(image);
   return (
     <div id={company} className="flex flex-col">
       <div className="flex flex-row gap-4 justify-items-end w-full">
         <div className="w-1/3">
-          <Image
+          <img
             className="aspect-square rounded-lg border-4 object-contain border-white"
             src={image}
             alt={company + " picture"}
-            width={500}
-            height={500}
           />
         </div>
         <div
