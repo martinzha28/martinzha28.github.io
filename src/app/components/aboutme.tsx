@@ -1,15 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
     <div id="About Me Section" className="flex flex-row gap-10 ">
-      <div className="w-1/3">
-        <img
-          className="w-full aspect-square rounded-lg border-4 object-contain"
-          src="../../../images/hack-the-north-headshot.jpg"
+      <div className="w-1/3 aspect-square rounded-lg border-4 object-contain">
+        <Image
+          src="/images/hack-the-north-headshot.jpg"
           alt="Headshot"
+          width={500}
+          height={500}
         />
       </div>
 

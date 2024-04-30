@@ -1,4 +1,5 @@
 import { FaGithub, FaLink } from "react-icons/fa";
+import Image from "next/image";
 
 export type ProjectlistProps = {
   image: string;
@@ -37,10 +38,12 @@ export default function ProjectEntry({
         )}
       </div>
 
-      <img
-        className="aspect-video rounded-lg border-4 object-cover"
+      <Image
+        className="aspect-video rounded-lg border-4 object-cover border-white"
         src={image}
         alt={name}
+        width={1600}
+        height={900}
       />
       <div className="flex flex-row text-import-pink gap-4 flex-wrap">
         {techstack.map((tech: string) => {

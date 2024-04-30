@@ -1,4 +1,3 @@
-import WIP from "../wip";
 import importedworklist from "../../../data/techstack.json";
 
 export default function TechStack() {
@@ -16,7 +15,7 @@ export default function TechStack() {
         <p className="text-2xl text-comment-green"> Languages: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.languages.map((badge) => {
-            return <img className="" src={badge.link} />;
+            return <img className="" src={badge.link} alt={badge.alt} />;
           })}
         </div>
       </div>
@@ -25,7 +24,7 @@ export default function TechStack() {
         <p className="text-2xl text-comment-green"> Libraries and Frameworks: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.frameworks.map((badge) => {
-            return <img className="" src={badge.link} />;
+            return <img className="" src={badge.link} alt={badge.alt} />;
           })}
         </div>
       </div>
@@ -34,7 +33,7 @@ export default function TechStack() {
         <p className="text-2xl text-comment-green"> Development Tools: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.devtools.map((badge) => {
-            return <img className="" src={badge.link} />;
+            return <img className="" src={badge.link} alt={badge.alt} />;
           })}
         </div>
       </div>

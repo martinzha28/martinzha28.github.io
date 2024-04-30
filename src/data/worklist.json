@@ -1,9 +1,9 @@
 {
   "worklist": [
     {
-      "logo": "../../../logos/mmc-logo.jpg",
+      "logo": "/logos/mmc-logo.jpg",
       "filename": "MarshMcLennan.mmc",
-      "image": "../../images/mmc-team.jpg",
+      "image": "/images/mmc-team.jpg",
       "position": "Software Developer",
       "company": "Marsh McLennan",
       "location": "Toronto, ON",
@@ -15,9 +15,9 @@
       "techstack": ["React.js", "MongoDB", "Express.js", "Node.js", "Next.js", "Cypress", "SASS", "Storybook.js"]
     },
     {
-      "logo": "../../logos/innovation-lab-logo.jpg",
+      "logo": "/logos/innovation-lab-logo.jpg",
       "filename": "Innovation.wsib",
-      "image": "../../images/wsib-team.jpg",
+      "image": "/images/wsib-team.jpg",
       "position": "Full Stack Developer",
       "company": "WSIB Innovation Labs",
       "location": "Kitchener, ON",
@@ -29,9 +29,9 @@
       "techstack": ["Azure", "React.js", "Express.js", "Flask", "Python", "Node.js", "TypeScript", "PrivateGPT"]
     },
     {
-      "logo": "/public/logos/genesys-logo.jpg",
+      "logo": "/logos/genesys-logo.jpg",
       "filename": "Genesys.cloud",
-      "image": "/public/images/genesys.jpg",
+      "image": "/images/genesys.jpg",
       "position": "QA Intern",
       "company": "Genesys Cloud Services",
       "location": "Markham, ON",

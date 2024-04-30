@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type EducationProps = {
   logo: string;
   name: string;
@@ -16,10 +18,12 @@ export default function EducationEntry({
   return (
     <div id={name} className="flex flex-row justify-items-end w-full">
       <div className="w-2/12">
-        <img
+        <Image
           className="rounded-full object-contain"
           src={logo}
           alt={name + " logo"}
+          width={500}
+          height={500}
         />
       </div>
 
