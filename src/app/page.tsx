@@ -19,10 +19,7 @@ export default function Page() {
           <Tabs />
           <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto py-8 px-16 gap-4 scroll-smooth">
             <AboutMe />
-            <WorkExperience />
-            <Projects />
-            <Education />
-            <TechStack />
+            
           </div>
         </div>
       </div>
@@ -31,6 +28,12 @@ export default function Page() {
     </>
   );
 }
+
+/* <WorkExperience />
+            <Projects />
+            <Education />
+            <TechStack />
+            */
 
 
 // Todo List:
