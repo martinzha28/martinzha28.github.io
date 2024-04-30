@@ -19,7 +19,7 @@
   "projectlist": [
     {
       "image": "/projects/personal-portfolio.png",
-      "filename": "Personal Portfolio",
+      "filename": "Portfolio",
       "name": "Personal Portfolio",
       "subtitle" : "This site!",
       "techstack": ["Next.js", "React.js", "Talwind CSS"],

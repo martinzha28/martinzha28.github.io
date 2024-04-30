@@ -6,12 +6,11 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <div id="About Me Section" className="flex flex-row gap-10 ">
-      <div className="w-1/3 aspect-square rounded-lg border-4 object-contain">
-        <Image
+      <div className="w-1/3">
+        <img
+          className="aspect-square rounded-lg border-4 object-contain border-white"
           src="/hack-the-north-headshot.jpg"
           alt="Headshot"
-          width={500}
-          height={500}
         />
       </div>
 
