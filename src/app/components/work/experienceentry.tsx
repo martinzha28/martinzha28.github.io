@@ -33,6 +33,7 @@ export default function ExperienceEntry({
       <div className="flex flex-row gap-4 justify-items-end w-full">
         <div className="w-1/3 aspect-square rounded-lg border-4 object-contain">
           <Image
+            unoptimized
             src={image}
             alt={company + " picture"}
             width={500}
