@@ -35,12 +35,17 @@ export default function Page() {
 
 
 // Todo List:
+
 // Project logos
-// Nav/table of contents that scrolls as you go down
+// horizontal line as divider
+// get rid of recursive typing animatyion. also smaller font
+// work experience slashs: make sure to act like a bullet point
+// bold pink, important to user. also fix the overflow, looks like enter not shift + enter
+
 // Animate on startup
 // Click image to expand
 // Skeleton and graceful degradation for image: https://www.npmjs.com/package/react-loading-skeleton
 
-// Complicated stuff
+// Click on folders in navbar to open close?
 // Light Mode https://tailwindcss.com/docs/dark-mode
-// Mobile https://tailwindcss.com/docs/responsive-design
+// Nav/table of contents that scrolls as you go down
