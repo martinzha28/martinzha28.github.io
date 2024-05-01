@@ -24,7 +24,7 @@ export default function Projects() {
           link={featuredproject.link}
           github={featuredproject.github}
           />
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid sm:grid-cols-1 sm:grid-cols-2 gap-8">
       {importedprojectlist.projectlist.map((project : ProjectlistProps) => {
         return (
           <ProjectEntry

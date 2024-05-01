@@ -12,12 +12,13 @@ import TechStack from "./components/techstack/techstack";
 export default function Page() {
   return (
     <>
-      <div className="flex flex-row flex-nowrap ">
+      <div className="flex flex-col sm:flex-row flex-nowrap ">
         <Sidebar />
         <Navbar />
+        
         <div className="h-[calc(100vh-24px)] flex flex-col w-full">
           <Tabs />
-          <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto py-8 px-16 gap-4 scroll-smooth">
+          <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
             <AboutMe />
             <WorkExperience />
             <Projects />

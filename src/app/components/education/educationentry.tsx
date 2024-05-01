@@ -16,18 +16,18 @@ export default function EducationEntry({
   points,
 }: EducationProps) {
   return (
-    <div id={name} className="flex flex-row justify-items-end w-full">
-      <div className="w-2/12">
+    <div id={name} className="flex flex-col sm:flex-row justify-items-end w-full">
+      <div className="w-full sm:w-2/12">
         <Image
           className="rounded-full object-contain"
           src={logo}
           alt={name + " logo"}
-          width={500}
-          height={500}
+          width={1000}
+          height={100}
         />
       </div>
 
-      <div className="flex flex-col gap-2 px-16 whitespace-pre-line w-10/12">
+      <div className="flex flex-col gap-2 sm:px-16 whitespace-pre-line w-full sm:w-10/12">
         <p className="text-3xl text-variable-blue">{name}</p>
         <p className="text-lg">
           {" "}

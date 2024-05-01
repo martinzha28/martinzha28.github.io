@@ -30,20 +30,22 @@ export default function ExperienceEntry({
   console.log(image);
   return (
     <div id={company} className="flex flex-col">
-      <div className="flex flex-row gap-4 justify-items-end w-full">
-        <div className="w-1/3">
+      <div className="flex flex-col sm:flex-row gap-4 justify-items-end w-full">
+        <div className="w-full sm:w-1/3">
           <Image
             className="aspect-square rounded-lg border-4 object-contain border-white"
             src={image}
             alt={company + " picture"}
             loading="lazy"
+            width={1000}
+            height={1000}
           />
         </div>
         <div
-          className="flex flex-col px-4 whitespace-pre-line w-2/3 hover:bg-hover-dark rounded-lg"
+          className="flex flex-col sm:px-4 whitespace-pre-line w-full sm:w-2/3 hover:bg-hover-dark rounded-lg"
           onClick={handleClick}
         >
-          <div className="flex flex-row text-2xl items-center">
+          <div className="flex flex-row text-2xl items-center flex-wrap">
             {expanded ? <FaChevronDown /> : <FaChevronRight />}
             <p className="text-class-yellow"> &nbsp;{company}&nbsp;</p>
             <p className="text-brackets-pink"> ()&nbsp;</p>

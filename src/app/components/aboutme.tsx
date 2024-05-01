@@ -5,17 +5,19 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <div id="About Me Section" className="flex flex-row gap-10 ">
-      <div className="w-1/3">
+    <div id="About Me Section" className="flex flex-col sm:flex-row gap-10 ">
+      <div className="w-full sm:w-1/3">
         <Image
           className="aspect-square rounded-lg border-4 object-contain border-white"
           src="hack-the-north-headshot.jpg"
           alt="Headshot"
           loading="lazy"
+          width={1000}
+          height={1000}
         />
       </div>
 
-      <div className="w-2/3 flex flex-col gap-5 whitespace-pre-line">
+      <div className="w-full sm:w-2/3 flex flex-col gap-5 whitespace-pre-line">
         <div className="flex flex-row flex-wrap text-3xl">
           <p className="text-let-blue"> const&nbsp;</p>
           <p className="text-variable-blue"> name&nbsp;</p>

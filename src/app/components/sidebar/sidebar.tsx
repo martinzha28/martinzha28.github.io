@@ -7,9 +7,9 @@ export default function Sidebar() {
   const external = { color: "#848484", fontSize: "30px" };
   const profile = { color: "#FFFFFF", fontSize: "30px" };
   return (
-    <aside id="Sidebar" className="bg-sidebar-dark h-[calc(100vh-24px)] w-16 py-3 flex flex-col flex-nowrap items-center fill-navbar-gray justify-between">
-      <div className="gap-5 flex flex-col flex-nowrap items-center w-full">
-        <div className="flex flex-row border-l-2 border-white w-full justify-center">
+    <aside id="Sidebar" className="bg-sidebar-dark w-100vh h-16 sm:h-[calc(100vh-24px)] sm:w-16 px-3 sm:py-3 flex flex-row sm:flex-col flex-nowrap items-center fill-navbar-gray justify-between">
+      <div className="gap-5 flex flex-row sm:flex-col flex-nowrap items-center sm:w-full">
+        <div className="flex flex-row w-full justify-center">
           <CgProfile style={profile} />
         </div>
         <a href="https://www.github.com/martinzha28" aria-label="Github">
@@ -27,3 +27,5 @@ export default function Sidebar() {
     </aside>
   );
 }
+
+// border-b-2 sm:border-b-0 sm:border-l-2 border-white

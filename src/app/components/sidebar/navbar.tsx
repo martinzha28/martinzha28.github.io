@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <aside
       id="Navagation Bar"
-      className="bg-navbar-dark h-[calc(100vh-24px)] w-3/12"
+      className="invisible sm:visible bg-navbar-dark h-0 sm:h-[calc(100vh-24px)] w-3/12"
     >
       <div className="text-navbar-gray font-mono pl-3 pt-2">NAVAGATION</div>
       <div className=" font-bold pl-1 pt-2">
