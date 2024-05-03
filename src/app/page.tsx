@@ -36,9 +36,14 @@ export default function Page() {
 
 // Todo List:
 
+// Update Readme
+// Links to companies
+// Website logo
+// MoniturTime horizontal image instead
+// Add team name
 // Project logos
 // horizontal line as divider
-// get rid of recursive typing animatyion. also smaller font
+// get rid of recursive typing animatyion. also smaller font or one page
 // work experience slashs: make sure to act like a bullet point
 // bold pink, important to user. also fix the overflow, looks like enter not shift + enter
 

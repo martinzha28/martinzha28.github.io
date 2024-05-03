@@ -27,6 +27,8 @@ export default function WorkExperience() {
             image = {work.image}
             location = {work.location}
             duration = {work.duration}
+            team = {work.team}
+            companysite = {work.companysite}
             points = {work.points}
             techstack = {work.techstack}
           />

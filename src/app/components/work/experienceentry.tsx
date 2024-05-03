@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
 import Image from "next/image";
 
 export type WorklistProps = {
@@ -10,6 +11,8 @@ export type WorklistProps = {
   company: string;
   location: string;
   duration: string;
+  team: string;
+  companysite: string;
   points: string[];
   techstack: string[];
 };
@@ -20,6 +23,8 @@ export default function ExperienceEntry({
   company,
   location,
   duration,
+  team,
+  companysite,
   points,
   techstack,
 }: WorklistProps) {
@@ -48,7 +53,11 @@ export default function ExperienceEntry({
           <div className="flex flex-row text-2xl items-center flex-wrap">
             {expanded ? <FaChevronDown /> : <FaChevronRight />}
             <p className="text-class-yellow"> &nbsp;{company}&nbsp;</p>
-            <p className="text-brackets-pink"> ()&nbsp;</p>
+            <p className="text-brackets-pink"> (&nbsp;</p>
+            <a href={companysite}>
+              <FaLink color="#729757" />
+            </a>
+            <p className="text-brackets-pink"> &nbsp;)&nbsp;</p>
             <p className="text-class-yellow">
               {" "}
               &#123; {/* Left Curly Brace */}
@@ -64,6 +73,7 @@ export default function ExperienceEntry({
                 <VarLine name="Position" value={position} />
                 <VarLine name="Location" value={location} />
                 <VarLine name="Duration" value={duration} />
+                <VarLine name="Team" value={team} />
                 <br />
 
                 <div className="flex flex-row flex-wrap text-import-pink gap-4">
