@@ -8,7 +8,7 @@ export default function AboutMe() {
     <div id="About Me Section" className="flex flex-col sm:flex-row gap-10 ">
       <div className="w-full sm:w-1/3">
         <Image
-          className="aspect-square rounded-lg border-4 object-contain border-white"
+          className="aspect-square rounded-lg border-4 object-contain border-gray-text dark:border-white"
           src="hack-the-north-headshot.jpg"
           alt="Headshot"
           loading="lazy"
@@ -21,11 +21,11 @@ export default function AboutMe() {
         <div className="flex flex-row flex-wrap text-3xl">
           <p className="text-let-blue"> const&nbsp;</p>
           <p className="text-variable-blue"> name&nbsp;</p>
-          <p className="text-white"> :&nbsp;</p>
+          <p className="text-gray-text dark:text-white"> :&nbsp;</p>
           <p className="text-type-dec-cyan"> String&nbsp;</p>
-          <p className="text-white"> =&nbsp;</p>
+          <p className="text-gray-text dark:text-white"> =&nbsp;</p>
           <p className="text-string-orange"> "Martin Zhao" </p>
-          <p className="text-white"> ; </p>
+          <p className="text-gray-text dark:text-white"> ; </p>
         </div>
         <TypeComponent />
         <p>

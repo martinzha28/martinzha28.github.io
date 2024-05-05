@@ -39,7 +39,7 @@ export default function ProjectEntry({
       </div>
 
       <Image
-        className="aspect-video rounded-lg border-4 object-cover border-white"
+        className="aspect-video rounded-lg border-4 object-cover border-gray-text dark:border-white"
         src={image}
         alt={name}
         width={1600}

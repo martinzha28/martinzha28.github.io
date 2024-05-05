@@ -8,7 +8,7 @@ export default function NavbarEntry(props: {
   }) {
     return (
       <Link href={"#" + props.alt}>
-      <div className="flex flex-row flex-nowrap text-white font-mono items-center gap-2 hover:bg-hover-dark">
+      <div className="flex flex-row flex-nowrap text-gray-text dark:text-white font-mono items-center gap-2 hover:bg-hover-light dark:hover:bg-hover-dark">
         {typeof props.logo === "string" && (
           <Image
             className="object-contain h-4 w-4"

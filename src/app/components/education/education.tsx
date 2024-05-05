@@ -8,12 +8,12 @@ export default function Education() {
         <p className="text-import-pink"> await&nbsp;</p>
         <p className="text-class-yellow"> Graduation </p>
         <p className="text-brackets-pink"> () </p>
-        <p className="text-white"> . </p>
+        <p className="text-gray-text dark:text-white"> . </p>
         <p className="text-class-yellow"> then </p>
         <p className="text-brackets-pink"> ( </p>
         <p className="text-comment-green"> /* Implement */ </p>
         <p className="text-brackets-pink"> ) </p>
-        <p className="text-white"> ; </p>
+        <p className="text-gray-text dark:text-white"> ; </p>
       </div>
 
       {importededucationlist.educationlist.map((education: EducationProps) => {

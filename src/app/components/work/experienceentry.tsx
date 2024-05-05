@@ -32,13 +32,12 @@ export default function ExperienceEntry({
   const handleClick = () => {
     changeExpand(!expanded);
   };
-  console.log(image);
   return (
     <div id={company} className="flex flex-col">
       <div className="flex flex-col sm:flex-row gap-4 justify-items-end w-full">
         <div className="w-full sm:w-1/3">
           <Image
-            className="aspect-square rounded-lg border-4 object-contain border-white"
+            className="aspect-square rounded-lg border-4 object-contain border-gray-text dark:border-white"
             src={image}
             alt={company + " picture"}
             loading="lazy"
@@ -47,7 +46,7 @@ export default function ExperienceEntry({
           />
         </div>
         <div
-          className="flex flex-col sm:px-4 whitespace-pre-line w-full sm:w-2/3 hover:bg-hover-dark rounded-lg"
+          className="flex flex-col sm:px-4 whitespace-pre-line w-full sm:w-2/3 hover:bg-hover-light dark:hover:bg-hover-dark rounded-lg"
           onClick={handleClick}
         >
           <div className="flex flex-row text-2xl items-center flex-wrap">
@@ -107,9 +106,9 @@ function VarLine(props: { name: string; value?: string }) {
   return (
     <div className="flex flex-row flex-wrap">
       <p className="text-variable-blue">{props.name}</p>
-      <p className="text-white">&nbsp;=&nbsp;</p>
+      <p className="text-gray-text dark:text-white">&nbsp;=&nbsp;</p>
       <p className="text-string-orange">{'"' + props.value + '"'}</p>
-      <p className="text-white">;</p>
+      <p className="text-gray-text dark:text-white">;</p>
     </div>
   );
 }

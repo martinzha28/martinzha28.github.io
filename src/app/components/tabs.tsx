@@ -5,9 +5,9 @@ export default function Tabs() {
   return (
     <div
       id="Tabs"
-      className="flex flex-row flex-nowrap overflow-auto w-full h-8 bg-navbar-dark"
+      className="flex flex-row flex-nowrap overflow-auto w-full h-8 bg-navbar-light dark:bg-navbar-dark"
     >
-      <div className="flex flex-row bg-background-dark h-full w-32 items-center p-2">
+      <div className="flex flex-row bg-background-light dark:bg-background-dark h-full w-32 items-center p-2">
         <NavbarEntry
           logo={<IoInformationCircleOutline color="#559AB9" size="16px" />}
           alt="About Me Section"

@@ -8,7 +8,7 @@ export default function TechStack() {
         <p className="text-variable-blue"> TechStack&nbsp;</p>
         <p className="text-import-pink"> from&nbsp;</p>
         <p className="text-string-orange"> "./brain/important" </p>
-        <p className="text-white"> ; </p>
+        <p className="text-gray-text dark:text-white"> ; </p>
       </div>
 
       <div className="flex flex-col gap-2">

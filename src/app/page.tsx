@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import Sidebar from "./components/sidebar/sidebar";
 import Navbar from "./components/sidebar/navbar";
 import Footer from "./components/footer";
@@ -10,15 +14,16 @@ import Education from "./components/education/education";
 import TechStack from "./components/techstack/techstack";
 
 export default function Page() {
+  const [theme, changeTheme] = useState("dark");
   return (
     <>
-      <div className="flex flex-col sm:flex-row flex-nowrap ">
-        <Sidebar />
+      <div className={`flex flex-col sm:flex-row flex-nowrap ${theme}`}>
+        <Sidebar theme={theme} changeTheme={changeTheme}/>
         <Navbar />
         
-        <div className="h-[calc(100vh-24px)] flex flex-col w-full">
+        <div className={`h-[calc(100vh-24px)] flex flex-col w-full ${theme}`}>
           <Tabs />
-          <div className="bg-background-dark grow h-full text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
+          <div className="bg-backgound-light dark:bg-background-dark grow h-full text-gray-text dark:text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
             <AboutMe />
             <WorkExperience />
             <Projects />
@@ -51,6 +56,6 @@ export default function Page() {
 // Click image to expand
 // Skeleton and graceful degradation for image: https://www.npmjs.com/package/react-loading-skeleton
 
+// sidebar icons on hover
 // Click on folders in navbar to open close?
-// Light Mode https://tailwindcss.com/docs/dark-mode
 // Nav/table of contents that scrolls as you go down
