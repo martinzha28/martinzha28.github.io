@@ -53,8 +53,8 @@ export default function ExperienceEntry({
             {expanded ? <FaChevronDown /> : <FaChevronRight />}
             <p className="text-class-yellow"> &nbsp;{company}&nbsp;</p>
             <p className="text-brackets-pink"> (&nbsp;</p>
-            <a href={companysite}>
-              <FaLink color="#729757" />
+            <a href={companysite} target="_blank" rel="noopener noreferrer">
+              <FaLink color="#70C1FD" />
             </a>
             <p className="text-brackets-pink"> &nbsp;)&nbsp;</p>
             <p className="text-class-yellow">

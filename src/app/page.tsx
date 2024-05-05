@@ -41,11 +41,8 @@ export default function Page() {
 
 // Todo List:
 
-// Update Readme
-// Links to companies
 // Website logo
 // MoniturTime horizontal image instead
-// Add team name
 // Project logos
 // horizontal line as divider
 // get rid of recursive typing animatyion. also smaller font or one page

@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className=" font-bold pl-1 pt-2">
         <Folder
           image={<FaChevronDown />}
-          text="MartinZhao.tech"
+          text="MartinZhao.ca"
           section="About Me Section"
         />
       </div>

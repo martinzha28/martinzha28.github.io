@@ -25,15 +25,15 @@ export default function ProjectEntry({
         <p className="text-3xl text-string-orange ">{name}</p> 
       <div className="flex flex-row items-center gap-4">
         
-        <p className="text-lg text-variable-blue"> {subtitle} </p>
+        <p className="text-lg text-comment-green"> {subtitle} </p>
         {github && (
-          <a href={github}>
-            <FaGithub color="#729757"/>
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub color="#70C1FD"/>
           </a>
         )}
         {link && (
-          <a href={link}>
-            <FaLink color="#729757"/>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <FaLink color="#70C1FD"/>
           </a>
         )}
       </div>

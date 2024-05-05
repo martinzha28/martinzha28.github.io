@@ -30,13 +30,13 @@ export default function Sidebar({theme, changeTheme} : SideBarProps) {
         <div className="flex flex-row w-full justify-center">
           <CgProfile style={profile} />
         </div>
-        <a href="https://www.github.com/martinzha28" aria-label="Github">
+        <a href="https://www.github.com/martinzha28" target="_blank" rel="noopener noreferrer">
           <FaGithub style={external} />
         </a>
-        <a href="https://www.linkedin.com/in/martin-zha28/" aria-label="Linkedin">
+        <a href="https://www.linkedin.com/in/martin-zha28/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin style={external} />
         </a>
-        <a href="mailto:martin.zhao@uwaterloo.ca" aria-label="Email">
+        <a href="mailto:martin.zhao@uwaterloo.ca" target="_blank" rel="noopener noreferrer">
           <CgMail style={external} />
         </a>
       </div>
