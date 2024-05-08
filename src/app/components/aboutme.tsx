@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 
+import NameTitle from "./titles/nametitle";
+
 export default function AboutMe() {
   return (
     <div id="About Me Section" className="flex flex-col sm:flex-row gap-10 ">
@@ -18,15 +20,7 @@ export default function AboutMe() {
       </div>
 
       <div className="w-full sm:w-2/3 flex flex-col gap-5 whitespace-pre-line">
-        <div className="flex flex-row flex-wrap text-3xl">
-          <p className="text-let-blue"> const&nbsp;</p>
-          <p className="text-variable-blue"> name&nbsp;</p>
-          <p className="text-gray-text dark:text-white"> :&nbsp;</p>
-          <p className="text-type-dec-cyan"> String&nbsp;</p>
-          <p className="text-gray-text dark:text-white"> =&nbsp;</p>
-          <p className="text-string-orange"> "Martin Zhao" </p>
-          <p className="text-gray-text dark:text-white"> ; </p>
-        </div>
+        <NameTitle />
         <TypeComponent />
         <p>
           I'm a 3B Computer Science Student studying at the University of
