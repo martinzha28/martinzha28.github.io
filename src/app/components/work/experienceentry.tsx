@@ -51,13 +51,13 @@ export default function ExperienceEntry({
         >
           <div className="flex flex-row text-2xl items-center flex-wrap">
             {expanded ? <FaChevronDown /> : <FaChevronRight />}
-            <p className="text-class-yellow"> &nbsp;{company}&nbsp;</p>
-            <p className="text-brackets-pink"> (&nbsp;</p>
+            <p className="text-class-yellow-light dark:text-class-yellow-dark"> &nbsp;{company}&nbsp;</p>
+            <p className="text-brackets-pink-light dark:text-brackets-pink-dark"> (&nbsp;</p>
             <a href={companysite} target="_blank" rel="noopener noreferrer">
               <FaLink color="#70C1FD" />
             </a>
-            <p className="text-brackets-pink"> &nbsp;)&nbsp;</p>
-            <p className="text-class-yellow">
+            <p className="text-brackets-pink-light dark:text-brackets-pink-dark"> &nbsp;)&nbsp;</p>
+            <p className="text-class-yellow-light dark:text-class-yellow-dark">
               {" "}
               &#123; {/* Left Curly Brace */}
             </p>
@@ -65,7 +65,7 @@ export default function ExperienceEntry({
 
           <div className="pl-16 pt-1">
             {!expanded && (
-              <p className="text-comment-green"> // Click to Learn More </p>
+              <p className="text-comment-green-light dark:text-comment-green-dark"> // Click to Learn More </p>
             )}
             {expanded && (
               <>
@@ -75,7 +75,7 @@ export default function ExperienceEntry({
                 <VarLine name="Team" value={team} />
                 <br />
 
-                <div className="flex flex-row flex-wrap text-import-pink gap-4">
+                <div className="flex flex-row flex-wrap text-import-pink-light dark:text-import-pink-dark gap-x-4">
                   {techstack.map((tech: string) => {
                     return <p> {tech} </p>;
                   })}
@@ -83,7 +83,7 @@ export default function ExperienceEntry({
 
                 <br />
 
-                <div className="flex flex-col pt-2 text-comment-green">
+                <div className="flex flex-col pt-2 text-comment-green-light dark:text-comment-green-dark">
                   {points.map((point: string) => {
                     return <p> // {point} </p>;
                   })}
@@ -92,7 +92,7 @@ export default function ExperienceEntry({
             )}
           </div>
 
-          <p className="text-class-yellow text-2xl pl-10">
+          <p className="text-class-yellow-light dark:text-class-yellow-dark text-2xl pl-10">
             {" "}
             &#125; {/* Right Curly Brace */}{" "}
           </p>
@@ -105,9 +105,9 @@ export default function ExperienceEntry({
 function VarLine(props: { name: string; value?: string }) {
   return (
     <div className="flex flex-row flex-wrap">
-      <p className="text-variable-blue">{props.name}</p>
+      <p className="text-variable-blue-light dark:text-variable-blue">{props.name}</p>
       <p className="text-gray-text dark:text-white">&nbsp;=&nbsp;</p>
-      <p className="text-string-orange">{'"' + props.value + '"'}</p>
+      <p className="text-string-orange-light dark:text-string-orange">{'"' + props.value + '"'}</p>
       <p className="text-gray-text dark:text-white">;</p>
     </div>
   );

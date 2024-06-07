@@ -47,7 +47,6 @@ export default function Page() {
 // horizontal line as divider
 // get rid of recursive typing animatyion. also smaller font or one page
 // work experience slashs: make sure to act like a bullet point
-// bold pink, important to user. also fix the overflow, looks like enter not shift + enter
 
 // Animate on startup
 // Click image to expand

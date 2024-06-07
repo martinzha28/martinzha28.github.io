@@ -45,7 +45,7 @@ const TypeComponent = () => {
   return (
     <TypeAnimation
       sequence={[
-        "// Welcome to my Personal Portfolio! \n //",
+        "// Welcome to my Personal Portfolio! \n // ",
         1500,
         "// Welcome to my Personal Portfolio! \n// Computer Science Student.",
         1100,

@@ -7,7 +7,7 @@ export default function TechStack() {
       <TechStackTitle />
 
       <div className="flex flex-col gap-2">
-        <p className="text-2xl text-comment-green"> Languages: </p>
+        <p className="text-2xl text-comment-green-light dark:text-comment-green-dark"> Languages: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.languages.map((badge) => {
             return <img className="" src={badge.link} alt={badge.alt} />;
@@ -16,7 +16,7 @@ export default function TechStack() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <p className="text-2xl text-comment-green"> Libraries and Frameworks: </p>
+        <p className="text-2xl text-comment-green-light dark:text-comment-green-dark"> Libraries and Frameworks: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.frameworks.map((badge) => {
             return <img className="" src={badge.link} alt={badge.alt} />;
@@ -25,7 +25,7 @@ export default function TechStack() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <p className="text-2xl text-comment-green"> Development Tools: </p>
+        <p className="text-2xl text-comment-green-light dark:text-comment-green-dark"> Development Tools: </p>
         <div className="flex flex-row gap-2 flex-wrap">
           {importedworklist.devtools.map((badge) => {
             return <img className="" src={badge.link} alt={badge.alt} />;

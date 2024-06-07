@@ -28,10 +28,10 @@ export default function EducationEntry({
       </div>
 
       <div className="flex flex-col gap-2 sm:px-16 whitespace-pre-line w-full sm:w-10/12">
-        <p className="text-3xl text-variable-blue">{name}</p>
+        <p className="text-3xl text-variable-blue-light dark:text-variable-blue-dark">{name}</p>
         <p className="text-lg">
           {" "}
-          <em className="text-string-orange">{program}</em> | {duration}{" "}
+          <em className="text-string-orange-light dark:text-string-orange-dark">{program}</em> | {duration}{" "}
         </p>
         {points.map((point: string) => {
           return <p> - {point} </p>;
