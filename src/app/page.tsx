@@ -41,8 +41,8 @@ export default function Page() {
 
 // Todo List:
 
-// Website logo
-// MoniturTime horizontal image instead
+// Click nav bar to get rid of the nav bar
+// Dedicated page for CS courses
 // Project logos
 // horizontal line as divider
 // get rid of recursive typing animatyion. also smaller font or one page

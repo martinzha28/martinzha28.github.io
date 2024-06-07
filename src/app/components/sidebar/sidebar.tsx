@@ -25,7 +25,7 @@ export default function Sidebar({theme, changeTheme} : SideBarProps) {
     // console.log(theme);
   };
   return (
-    <aside id="Sidebar" className="bg-sidebar-light dark:bg-sidebar-dark w-100vh h-16 sm:h-[calc(100vh-24px)] sm:w-16 px-3 sm:py-3 flex flex-row sm:flex-col flex-nowrap items-center fill-navbar-light-gray dark:fill-navbar-gray justify-between">
+    <aside id="Sidebar" className="bg-sidebar-light dark:bg-sidebar-dark w-100vh h-16 sm:h-[calc(100vh-24px)] sm:w-16 px-3 sm:py-3 flex flex-row sm:flex-col flex-nowrap items-center fill-navbar-gray dark:fill-navbar-gray-dark justify-between">
       <div className="gap-5 flex flex-row sm:flex-col flex-nowrap items-center sm:w-full">
         <div className="flex flex-row w-full justify-center">
           <CgProfile style={profile} />

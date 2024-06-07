@@ -15,7 +15,7 @@ export default function Navbar() {
       id="Navagation Bar"
       className="invisible sm:visible bg-navbar-light dark:bg-navbar-dark h-0 sm:h-[calc(100vh-24px)] w-3/12"
     >
-      <div className="text-navbar-light-gray dark:text-navbar-gray font-mono pl-3 pt-2">NAVAGATION</div>
+      <div className="text-navbar-gray-light dark:text-navbar-gray-dark font-mono pl-3 pt-2">NAVAGATION</div>
       <div className=" font-bold pl-1 pt-2">
         <Folder
           image={<FaChevronDown />}
@@ -37,7 +37,7 @@ export default function Navbar() {
         />
         <div
           id="Work Experience Dropdown"
-          className="border-l-2 border-navbar-gray pl-2"
+          className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
         >
           {importedworklist.worklist.map((work) => {
             return (
@@ -58,7 +58,7 @@ export default function Navbar() {
 
         <div
           id="Project Dropdown"
-          className="border-l-2 border-navbar-gray pl-2"
+          className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
         >
           <NavbarEntry
             logo={<FaGithub />}
@@ -83,7 +83,7 @@ export default function Navbar() {
         />
         <div
           id="Education Dropdown"
-          className="border-l-2 border-navbar-gray pl-2"
+          className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
         >
           {importededucationlist.educationlist.map((education) => {
             return (
