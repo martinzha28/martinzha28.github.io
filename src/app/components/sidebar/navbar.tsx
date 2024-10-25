@@ -64,7 +64,7 @@ export default function Navbar() {
           className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
         >
           <NavbarEntry
-            logo={<FaGithub />}
+            logo={importedprojectlist.featured.logo != "" ? importedprojectlist.featured.logo : <FaGithub />}
             alt={importedprojectlist.featured.name}
             text={importedprojectlist.featured.filename}
           />
@@ -72,7 +72,7 @@ export default function Navbar() {
             return (
               <NavbarEntry
                 key={project.name}
-                logo={<FaGithub />}
+                logo={project.logo != "" ? project.logo : <FaGithub />}
                 alt={project.name}
                 text={project.filename}
               />

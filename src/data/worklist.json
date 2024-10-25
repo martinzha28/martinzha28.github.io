@@ -1,6 +1,32 @@
 {
   "worklist": [
     {
+      "logo": "logos/shopify-logo.png",
+      "filename": "Shopify.inc",
+      "image": "logos/shopify-logo.png",
+      "position": "Software Engineer",
+      "company": "Shopify",
+      "location": "Toronto, ON",
+      "duration": "January 2025 - April 2025",
+      "team": "To be Determined!",
+      "companysite": "https://www.shopify.com/ca",
+      "points": ["Details to be determined when coop starts"],
+      "techstack": ["Ruby", "Ruby on Rails"]
+    },
+    {
+      "logo": "logos/nuralogix-logo.jpg",
+      "filename": "Nuralogix.ai",
+      "image": "logos/nuralogix-logo.jpg",
+      "position": "Frontend Developer",
+      "company": "Nuralogix",
+      "location": "Toronto, ON",
+      "duration": "September 2024 - December 2024",
+      "team": "Web Development",
+      "companysite": "https://www.nuralogix.ai/",
+      "points": ["Currently working on the first company-wide component library"],
+      "techstack": ["React.js", "StyleX", "Storybook.js"]
+    },
+    {
       "logo": "logos/mmc-logo.jpg",
       "filename": "MarshMcLennan.mmc",
       "image": "images/mmc-team.jpg",

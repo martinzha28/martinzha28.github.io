@@ -1,24 +1,40 @@
 {
   "featured": {
-    "image": "projects/uwss.png",
-    "filename": "UWSS",
-    "name": "U Wanna Study Somewhere?",
-    "subtitle" : "",
+    "image": "projects/trailblazer.png",
+    "logo": "projects/trailblazer-logo.png",
+    "filename": "Trailblazer",
+    "name": "Trailblazer",
+    "subtitle" : "Navigation Mobile App",
     "techstack": [
-      "AWS Lambda",
-      "GraphQL",
-      "MySQL",
-      "Next.js",
-      "React.js",
-      "Bootstrap"
+      "Android Development",
+        "Kotlin",
+        "Jetpack Compose",
+        "Firebase"
     ],
-    "blurb": "Full-stack application to crowd-source reviews for common UW study spots! Future features for account and identity management, AI-based reccomendations, and mobile app integration.",
-    "link": "",
+    "blurb": "Fully functioning Mobile route optimizer for tourists that is designed to help users find the most efficient order of travel based on the locations they would like to visit.",
+    "link": "https://youtu.be/j7Dcibx-B8s?si=e8rKgtZoVTxUqhg",
     "github": ""
   },
   "projectlist": [
     {
+      "image": "projects/uwss.png",
+      "logo": "",
+      "filename": "UWSS",
+      "name": "U Wanna Study Somewhere?",
+      "subtitle" : "Backend Development Project",
+      "techstack": [
+        "AWS Lambda",
+        "DynamoDB",
+        "React.js",
+        "Django"
+      ],
+      "blurb": "Full-stack application to crowd-source reviews for common UW study spots! Future features for account and identity management, AI-based reccomendations, and mobile app integration.",
+      "link": "",
+      "github": ""
+    },
+    {
       "image": "projects/personal-portfolio.png",
+      "logo": "projects/personal-portfolio-logo.png",
       "filename": "Portfolio",
       "name": "Personal Portfolio",
       "subtitle" : "This site!",
@@ -29,6 +45,7 @@
     },
     {
       "image": "projects/chess.jpg",
+      "logo": "",
       "filename": "Chess",
       "name": "Chess",
       "subtitle" : "OOP final project",
@@ -39,6 +56,7 @@
     },
     {
       "image": "projects/hack-mit.png",
+      "logo": "projects/hack-mit-logo.png",
       "filename": "Trip Tracker",
       "name": "Trip Tracker",
       "subtitle" : "HackMIT",
@@ -49,6 +67,7 @@
     },
     {
       "image": "projects/hack-the-north.png",
+      "logo": "projects/hack-the-north-logo.png",
       "filename": "MonitUr Time",
       "name": "MonitUr Time",
       "subtitle" : "Hack the North",
