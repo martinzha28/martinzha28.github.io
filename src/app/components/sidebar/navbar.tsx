@@ -15,7 +15,9 @@ export default function Navbar() {
       id="Navagation Bar"
       className="invisible sm:visible bg-navbar-light dark:bg-navbar-dark h-0 sm:h-[calc(100vh-24px)] w-3/12"
     >
-      <div className="text-navbar-gray-light dark:text-navbar-gray-dark font-mono pl-3 pt-2">NAVAGATION</div>
+      <div className="text-navbar-gray-light dark:text-navbar-gray-dark font-mono pl-3 pt-2">
+        NAVAGATION
+      </div>
       <div className=" font-bold pl-1 pt-2">
         <Folder
           image={<FaChevronDown />}
@@ -42,6 +44,7 @@ export default function Navbar() {
           {importedworklist.worklist.map((work) => {
             return (
               <NavbarEntry
+                key={work.company + work.position}
                 logo={work.logo}
                 alt={work.company}
                 text={work.filename}
@@ -68,6 +71,7 @@ export default function Navbar() {
           {importedprojectlist.projectlist.map((project) => {
             return (
               <NavbarEntry
+                key={project.name}
                 logo={<FaGithub />}
                 alt={project.name}
                 text={project.filename}
@@ -88,6 +92,7 @@ export default function Navbar() {
           {importededucationlist.educationlist.map((education) => {
             return (
               <NavbarEntry
+                key={education.name}
                 logo={education.logo}
                 alt={education.name}
                 text={education.filename}

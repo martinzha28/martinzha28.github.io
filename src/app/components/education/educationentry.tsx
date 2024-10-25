@@ -33,8 +33,8 @@ export default function EducationEntry({
           {" "}
           <em className="text-string-orange-light dark:text-string-orange-dark">{program}</em> | {duration}{" "}
         </p>
-        {points.map((point: string) => {
-          return <p> - {point} </p>;
+        {points.map((point: string, index: number) => {
+          return <p key={"point" + index}> - {point} </p>;
         })}
       </div>
     </div>

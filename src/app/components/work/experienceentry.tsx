@@ -76,16 +76,16 @@ export default function ExperienceEntry({
                 <br />
 
                 <div className="flex flex-row flex-wrap text-import-pink-light dark:text-import-pink-dark gap-x-4">
-                  {techstack.map((tech: string) => {
-                    return <p> {tech} </p>;
+                  {techstack.map((tech: string, index: number) => {
+                    return <p key={"techstack" + index}> {tech} </p>;
                   })}
                 </div>
 
                 <br />
 
                 <div className="flex flex-col pt-2 text-comment-green-light dark:text-comment-green-dark">
-                  {points.map((point: string) => {
-                    return <p> // {point} </p>;
+                  {points.map((point: string, index: number) => {
+                    return <p key={"points" + index}> // {point} </p>;
                   })}
                 </div>
               </>

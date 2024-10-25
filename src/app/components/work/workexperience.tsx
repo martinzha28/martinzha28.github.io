@@ -10,6 +10,7 @@ export default function WorkExperience() {
       {importedworklist.worklist.map((work: WorklistProps) => {
         return (
           <ExperienceEntry
+            key={work.company+work.position}
             position={work.position}
             company={work.company}
             image={work.image}

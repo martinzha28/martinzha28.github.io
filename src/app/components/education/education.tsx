@@ -10,6 +10,7 @@ export default function Education() {
       {importededucationlist.educationlist.map((education: EducationProps) => {
         return (
           <EducationEntry
+            key={education.name}
             logo={education.logo}
             name={education.name}
             program={education.program}

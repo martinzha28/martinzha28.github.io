@@ -22,6 +22,7 @@ export default function Projects() {
         {importedprojectlist.projectlist.map((project: ProjectlistProps) => {
           return (
             <ProjectEntry
+              key={project.name}
               image={project.image}
               name={project.name}
               subtitle={project.subtitle}

@@ -46,8 +46,8 @@ export default function ProjectEntry({
         height={900}
       />
       <div className="flex flex-row text-import-pink-light dark:text-import-pink-dark gap-x-4 flex-wrap">
-        {techstack.map((tech: string) => {
-          return <p> {tech} </p>;
+        {techstack.map((tech: string, index: number) => {
+          return <p key={"techstack" + index}> {tech} </p>;
         })}
       </div>
       {blurb}
