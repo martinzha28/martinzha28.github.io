@@ -4,6 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
 
 import NameTitle from "./titles/nametitle";
+import ShowOnScroll from "../animations/showonscroll";
+import BulletPoint from "./bulletpoint";
 
 export default function AboutMe() {
   return (
@@ -19,11 +21,13 @@ export default function AboutMe() {
         />
       </div>
 
-      <div className="w-full sm:w-2/3 flex flex-col gap-5 whitespace-pre-line">
+      <ShowOnScroll className="w-full sm:w-2/3 flex flex-col gap-5 whitespace-pre-line" timing={250} delay={500}>
         <NameTitle />
-        <TypeComponent />
+        <BulletPoint point={"Computer Science Student"}/>
+        <BulletPoint point={"Full Stack Developer"}/>
+        <BulletPoint point={"AWS Certified"}/>
         <p>
-          I'm a 3B Computer Science Student studying at the University of
+          Welcome to my Personal Portfolio! I'm a 3B Computer Science Student studying at the University of
           Waterloo!
         </p>
         <p>
@@ -36,7 +40,7 @@ export default function AboutMe() {
           ready... In the meantime I'm experimenting with AWS. I'm happy to
           connect with anyone! Feel free to reach out!
         </p>
-      </div>
+      </ShowOnScroll>
     </div>
   );
 }

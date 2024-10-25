@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Sidebar from "./components/sidebar/sidebar";
 import Navbar from "./components/sidebar/navbar";
@@ -12,24 +12,26 @@ import Projects from "./components/projects/projects";
 import WIP from "./components/wip";
 import Education from "./components/education/education";
 import TechStack from "./components/techstack/techstack";
+import ShowOnScroll from "./animations/showonscroll";
 
 export default function Page() {
   const [theme, changeTheme] = useState("dark");
+
   return (
     <>
       <div className={`flex flex-col sm:flex-row flex-nowrap ${theme}`}>
-        <Sidebar theme={theme} changeTheme={changeTheme}/>
+        <Sidebar theme={theme} changeTheme={changeTheme} />
         <Navbar />
-        
+
         <div className={`h-[calc(100vh-24px)] flex flex-col w-full ${theme}`}>
           <Tabs />
-          <div className="bg-backgound-light dark:bg-background-dark grow h-full text-gray-text dark:text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
+          <ShowOnScroll delay={100} timing={2000} className="bg-backgound-light dark:bg-background-dark grow h-full text-gray-text dark:text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
             <AboutMe />
             <WorkExperience />
             <Projects />
             <Education />
             <TechStack />
-          </div>
+          </ShowOnScroll>
         </div>
       </div>
 
@@ -37,7 +39,6 @@ export default function Page() {
     </>
   );
 }
-
 
 // Todo List:
 

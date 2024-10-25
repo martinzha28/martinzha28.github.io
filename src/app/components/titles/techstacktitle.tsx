@@ -1,6 +1,8 @@
+import ShowOnScroll from "../../animations/showonscroll";
+
 export default function TechStackTitle() {
   return (
-    <div
+    <ShowOnScroll
       id="Tech Stack Title"
       className="flex flex-row flex-wrap text-3xl pb-2 w-full border-b-2 b-navbar-dark"
     >
@@ -9,6 +11,6 @@ export default function TechStackTitle() {
       <p className="text-import-pink-light dark:text-import-pink-dark"> from&nbsp;</p>
       <p className="text-string-orange-light dark:text-string-orange-dark"> "./brain/important" </p>
       <p className="text-gray-text dark:text-white"> ; </p>
-    </div>
+    </ShowOnScroll>
   );
 }

@@ -1,5 +1,6 @@
 import { FaGithub, FaLink } from "react-icons/fa";
 import Image from "next/image";
+import ShowOnScroll from "../../animations/showonscroll";
 
 export type ProjectlistProps = {
   image: string;
@@ -21,36 +22,42 @@ export default function ProjectEntry({
   github,
 }: ProjectlistProps) {
   return (
-    <div id={name} className="flex flex-col p-2 gap-2">
-        <p className="text-3xl text-string-orange-light dark:text-string-orange-dark ">{name}</p> 
-      <div className="flex flex-row items-center gap-4">
-        
-        <p className="text-lg text-comment-green-light dark:text-comment-green-dark"> {subtitle} </p>
-        {github && (
-          <a href={github} target="_blank" rel="noopener noreferrer">
-            <FaGithub color="#70C1FD"/>
-          </a>
-        )}
-        {link && (
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <FaLink color="#70C1FD"/>
-          </a>
-        )}
-      </div>
+    <ShowOnScroll>
+      <div id={name} className="flex flex-col p-2 gap-2">
+        <p className="text-3xl text-string-orange-light dark:text-string-orange-dark ">
+          {name}
+        </p>
+        <div className="flex flex-row items-center gap-4">
+          <p className="text-lg text-comment-green-light dark:text-comment-green-dark">
+            {" "}
+            {subtitle}{" "}
+          </p>
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <FaGithub color="#70C1FD" />
+            </a>
+          )}
+          {link && (
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <FaLink color="#70C1FD" />
+            </a>
+          )}
+        </div>
 
-      <Image
-        className="aspect-video rounded-lg border-4 object-cover border-gray-text dark:border-white"
-        src={image}
-        alt={name}
-        width={1600}
-        height={900}
-      />
-      <div className="flex flex-row text-import-pink-light dark:text-import-pink-dark gap-x-4 flex-wrap">
-        {techstack.map((tech: string, index: number) => {
-          return <p key={"techstack" + index}> {tech} </p>;
-        })}
+        <Image
+          className="aspect-video rounded-lg border-4 object-cover border-gray-text dark:border-white"
+          src={image}
+          alt={name}
+          width={1600}
+          height={900}
+        />
+        <div className="flex flex-row text-import-pink-light dark:text-import-pink-dark gap-x-4 flex-wrap">
+          {techstack.map((tech: string, index: number) => {
+            return <p key={"techstack" + index}> {tech} </p>;
+          })}
+        </div>
+        {blurb}
       </div>
-      {blurb}
-    </div>
+    </ShowOnScroll>
   );
 }

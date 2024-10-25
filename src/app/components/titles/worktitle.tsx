@@ -1,6 +1,8 @@
+import ShowOnScroll from "../../animations/showonscroll";
+
 export default function WorkTitle() {
   return (
-    <div
+    <ShowOnScroll
       id="Work Experience Title"
       className="flex flex-row flex-wrap text-3xl pb-2 w-full border-b-2 b-navbar-dark"
     >
@@ -13,6 +15,6 @@ export default function WorkTitle() {
       </p>
       <p className="text-brackets-pink-light dark:text-brackets-pink-dark"> ) </p>
       <p className="text-gray-text dark:text-white"> ; </p>
-    </div>
+    </ShowOnScroll>
   );
 }
