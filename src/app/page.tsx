@@ -23,9 +23,9 @@ export default function Page() {
         <Sidebar theme={theme} changeTheme={changeTheme} />
         <Navbar />
 
-        <div className={`h-[calc(100vh-24px)] flex flex-col w-full ${theme}`}>
+        <div className={`h-[calc(100vh-88px)] sm:h-[calc(100vh-24px)] flex flex-col w-full ${theme}`}>
           <Tabs />
-          <ShowOnScroll delay={100} timing={2000} className="bg-backgound-light dark:bg-background-dark grow h-full text-gray-text dark:text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
+          <ShowOnScroll delay={800} timing={1500} className="bg-backgound-light dark:bg-background-dark grow h-full text-gray-text dark:text-white font-mono flex flex-col overflow-auto py-8 px-6 sm:px-16 gap-4 scroll-smooth">
             <AboutMe />
             <WorkExperience />
             <Projects />

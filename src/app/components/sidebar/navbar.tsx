@@ -8,6 +8,7 @@ import importedworklist from "../../../data/worklist.json";
 import importedprojectlist from "../../../data/projectlist.json";
 
 import NavbarEntry from "./navbarentry";
+import ShowOnScroll from "../../animations/showonscroll";
 
 export default function Navbar() {
   return (
@@ -26,7 +27,7 @@ export default function Navbar() {
         />
       </div>
 
-      <div className="px-6 font-thin">
+      <ShowOnScroll className="px-6 font-thin" delay={2000} timing={500}>
         <NavbarEntry
           logo={<IoInformationCircleOutline color="#559AB9" size="16px" />}
           alt="About Me Section"
@@ -37,9 +38,11 @@ export default function Navbar() {
           text="past-experiences"
           section="Work Experience Section"
         />
-        <div
+        <ShowOnScroll
           id="Work Experience Dropdown"
           className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
+          delay={2500}
+          timing={300}
         >
           {importedworklist.worklist.map((work) => {
             return (
@@ -51,7 +54,7 @@ export default function Navbar() {
               />
             );
           })}
-        </div>
+        </ShowOnScroll>
 
         <Folder
           image={<FaChevronDown />}
@@ -59,9 +62,11 @@ export default function Navbar() {
           section="Projects Section"
         />
 
-        <div
+        <ShowOnScroll
           id="Project Dropdown"
           className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
+          delay={3000}
+          timing={300}
         >
           <NavbarEntry
             logo={importedprojectlist.featured.logo != "" ? importedprojectlist.featured.logo : <FaGithub />}
@@ -78,16 +83,18 @@ export default function Navbar() {
               />
             );
           })}
-        </div>
+        </ShowOnScroll>
 
         <Folder
           image={<FaChevronDown />}
           text="education"
           section="Education Section"
         />
-        <div
+        <ShowOnScroll
           id="Education Dropdown"
           className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
+          delay={3500}
+          timing={500}
         >
           {importededucationlist.educationlist.map((education) => {
             return (
@@ -99,7 +106,7 @@ export default function Navbar() {
               />
             );
           })}
-        </div>
+        </ShowOnScroll>
 
         <Folder
           image={<FaChevronRight />}
@@ -107,7 +114,7 @@ export default function Navbar() {
           section="Tech Stack Section"
         />
         <Folder image={<FaChevronRight />} text="hobbies" section="" />
-      </div>
+      </ShowOnScroll>
     </aside>
   );
 }

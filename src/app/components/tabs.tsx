@@ -5,7 +5,7 @@ export default function Tabs() {
   return (
     <div
       id="Tabs"
-      className="flex flex-row flex-nowrap overflow-auto w-full h-8 bg-navbar-light dark:bg-navbar-dark"
+      className="invisible sm:visible flex flex-row flex-nowrap overflow-auto w-full h-0 sm:h-8 bg-navbar-light dark:bg-navbar-dark"
     >
       <div className="flex flex-row bg-background-light dark:bg-background-dark h-full w-32 items-center p-2">
         <NavbarEntry
