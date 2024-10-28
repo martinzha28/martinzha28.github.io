@@ -44,12 +44,8 @@ export default function Page() {
 
 // Click nav bar to get rid of the nav bar
 // Dedicated page for CS courses
-// Project logos
 // horizontal line as divider
-// get rid of recursive typing animatyion. also smaller font or one page
-// work experience slashs: make sure to act like a bullet point
 
-// Animate on startup
 // Click image to expand
 // Skeleton and graceful degradation for image: https://www.npmjs.com/package/react-loading-skeleton
 

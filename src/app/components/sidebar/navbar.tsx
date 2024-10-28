@@ -94,7 +94,7 @@ export default function Navbar() {
           id="Education Dropdown"
           className="border-l-2 border-navbar-gray-light dark:border-navbar-gray-dark pl-2"
           delay={3500}
-          timing={500}
+          timing={800}
         >
           {importededucationlist.educationlist.map((education) => {
             return (
