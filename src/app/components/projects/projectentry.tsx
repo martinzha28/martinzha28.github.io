@@ -23,7 +23,7 @@ export default function ProjectEntry({
 }: ProjectlistProps) {
   return (
     <ShowOnScroll>
-      <div id={name} className="flex flex-col p-2 gap-2">
+      <div id={name} className="flex flex-col p-2 gap-2 text-gray-text dark:text-white">
         <p className="text-3xl text-string-orange-light dark:text-string-orange-dark ">
           {name}
         </p>
