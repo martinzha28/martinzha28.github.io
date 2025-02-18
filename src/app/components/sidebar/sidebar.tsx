@@ -5,6 +5,7 @@ import { CgProfile, CgMail } from "react-icons/cg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import ShowOnScroll from "../../animations/showonscroll";
+import HoverTooltip from "../../animations/hover";
 
 type SideBarProps = {
   theme: string;
@@ -38,34 +39,40 @@ export default function Sidebar({ theme, changeTheme }: SideBarProps) {
         <div className="flex flex-row w-full justify-center">
           <CgProfile style={profile} />
         </div>
-        <a
-          href="https://www.github.com/martinzha28"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub style={external} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/martin-zha28/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin style={external} />
-        </a>
-        <a
-          href="mailto:martin.zhao@uwaterloo.ca"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <CgMail style={external} />
-        </a>
+        <HoverTooltip
+          defaultObject={<FaGithub style={external} />}
+          hoverObject={<FaGithub style={profile} />} 
+          text={"Github"} 
+          link={"https://www.github.com/martinzha28"} 
+        />
+
+        <HoverTooltip 
+          defaultObject={<FaLinkedin style={external} />} 
+          hoverObject={<FaLinkedin style={profile} />}
+          text={"Linkedin"}
+          link={"https://www.linkedin.com/in/martin-zha28/"}
+        />
+
+        <HoverTooltip 
+          defaultObject={<CgMail style={external} />} 
+          hoverObject={<CgMail style={profile} />}
+          text={"Contact"}
+          link={"mailto:martin.zhao@uwaterloo.ca"}
+        />
+
       </ShowOnScroll>
 
       {theme == "dark" && (
-        <MdOutlineLightMode style={external} onClick={handleClick} />
+        <HoverTooltip
+          defaultObject={<MdOutlineLightMode style={external} onClick={handleClick} />} 
+          hoverObject={<MdOutlineLightMode style={profile} onClick={handleClick} />}
+          text={"Change to Light"} />
       )}
       {theme == "light" && (
-        <MdOutlineDarkMode style={external} onClick={handleClick} />
+        <HoverTooltip
+          defaultObject={<MdOutlineDarkMode style={external} onClick={handleClick} />}
+          hoverObject={<MdOutlineDarkMode style={profile} onClick={handleClick} />}
+          text={"Change to Dark"} />
       )}
     </aside>
   );
