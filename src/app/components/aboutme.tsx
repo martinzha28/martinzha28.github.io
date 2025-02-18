@@ -22,22 +22,21 @@ export default function AboutMe() {
 
       <ShowOnScroll className="w-full sm:w-2/3 flex flex-col gap-5 whitespace-pre-line" timing={250} delay={500}>
         <NameTitle />
-        <BulletPoint point={"Computer Science Student"}/>
-        <BulletPoint point={"Full Stack Developer"}/>
-        <BulletPoint point={"AWS Certified"}/>
+        <BulletPoint point={"Software Engineer"} />
+        <BulletPoint point={"Computer Science Student"} />
+        <BulletPoint point={"AWS Certified"} />
         <p className="text-gray-text dark:text-white">
-          Welcome to my Personal Portfolio! I'm a 3B Computer Science Student studying at the University of
-          Waterloo!
+          Welcome to my Personal Portfolio! I'm a 4A Computer Science Student
+          studying at the University ofWaterloo!
         </p>
         <p className="text-gray-text dark:text-white">
-          I love exploring automation methods and understanding the end-to-end
-          software development process. I hope to work with large code bases,
-          and slowly uncover how components interact with eact other.
+          Currently I am contributing to Shopify's API Foundations team, specializing in GraphQL and API development.
+          Previously, I worked in developing scalable component libraries during internships at Nuralogix AI and Marsh McLennan.
         </p>
         <p className="text-gray-text dark:text-white">
-          Currently I'm working a web application 🤭 to be released when
-          ready... In the meantime I'm experimenting with AWS. I'm happy to
-          connect with anyone! Feel free to reach out!
+          On the side, I'm working a web application 🤭 to be released when ready...
+          In the meantime I'm experimenting with AWS. 
+          I'm happy to connect with anyone! Feel free to reach out!
         </p>
       </ShowOnScroll>
     </div>
