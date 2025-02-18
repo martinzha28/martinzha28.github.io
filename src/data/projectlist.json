@@ -4,12 +4,12 @@
     "logo": "projects/trailblazer-logo.png",
     "filename": "Trailblazer",
     "name": "Trailblazer",
-    "subtitle" : "Navigation Mobile App",
+    "subtitle": "Navigation Mobile App",
     "techstack": [
       "Android Development",
-        "Kotlin",
-        "Jetpack Compose",
-        "Firebase"
+      "Kotlin",
+      "Jetpack Compose",
+      "Firebase"
     ],
     "blurb": "Fully functioning Mobile route optimizer for tourists that is designed to help users find the most efficient order of travel based on the locations they would like to visit.",
     "link": "https://youtu.be/j7Dcibx-B8s?si=e8rKgtZoVTxUqhg",
@@ -17,28 +17,16 @@
   },
   "projectlist": [
     {
-      "image": "projects/uwss.png",
-      "logo": "",
-      "filename": "UWSS",
-      "name": "U Wanna Study Somewhere?",
-      "subtitle" : "Backend Development Project",
-      "techstack": [
-        "AWS Lambda",
-        "DynamoDB",
-        "React.js",
-        "Django"
-      ],
-      "blurb": "Full-stack application to crowd-source reviews for common UW study spots! Future features for account and identity management, AI-based reccomendations, and mobile app integration.",
-      "link": "",
-      "github": ""
-    },
-    {
       "image": "projects/personal-portfolio.png",
       "logo": "projects/personal-portfolio-logo.png",
       "filename": "Portfolio",
       "name": "Personal Portfolio",
-      "subtitle" : "This site!",
-      "techstack": ["Next.js", "React.js", "Talwind CSS"],
+      "subtitle": "This site!",
+      "techstack": [
+        "Next.js",
+        "React.js",
+        "Talwind CSS"
+      ],
       "blurb": "Built website completely from scratch to improve my React and Tailwind skills. The content is dynamically generated (no hardcoded values) as well as support for animations, light mode, and mobile view.",
       "link": "https://martinzha28.github.io/personal-website/",
       "github": "https://github.com/martinzha28/personal-website"
@@ -48,8 +36,12 @@
       "logo": "",
       "filename": "Chess",
       "name": "Chess",
-      "subtitle" : "OOP final project",
-      "techstack": ["C++", "Linux", "Bash Scripting"],
+      "subtitle": "OOP final project",
+      "techstack": [
+        "C++",
+        "Linux",
+        "Bash Scripting"
+      ],
       "blurb": "Game of chess using object-oriented concepts. Features include multiplayer and computer options, setup mode, and test suites for automatic testing.",
       "link": "",
       "github": "https://github.com/martinzha28/CS246_Chess"
@@ -59,8 +51,13 @@
       "logo": "projects/hack-mit-logo.png",
       "filename": "Trip Tracker",
       "name": "Trip Tracker",
-      "subtitle" : "HackMIT",
-      "techstack": ["React.js", "Google Map API", "Node.js", "R"],
+      "subtitle": "HackMIT",
+      "techstack": [
+        "React.js",
+        "Google Map API",
+        "Node.js",
+        "R"
+      ],
       "blurb": "This app automatically tracks travel methods and emissions reduced. It features leaderboards for reducing carbon emissions and provides insights into personal travel habits.",
       "link": "",
       "github": "https://github.com/martinzha28/Hack-MIT"
@@ -70,8 +67,13 @@
       "logo": "projects/hack-the-north-logo.png",
       "filename": "MonitUr Time",
       "name": "MonitUr Time",
-      "subtitle" : "Hack the North",
-      "techstack": ["Google Manifest V3", "JavaScript", "HTML", "CSS"],
+      "subtitle": "Hack the North",
+      "techstack": [
+        "Google Manifest V3",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
       "blurb": "Chrome extension with the purpose of tracking daily Chrome activity. Measurements like toxonomy, how long you spend on each website, and your most popular websites are all tracked in the background which we can view using a popup.",
       "link": "",
       "github": "https://github.com/Nada-Elhossiny/MonitUr-time"

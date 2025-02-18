@@ -1,9 +1,9 @@
 {
   "educationlist": [
     {
-      "logo": "logos/lund-logo.png",
-      "filename": "Lund.swe",
-      "name": "Lund University (Exchange)",
+      "logo": "logos/hkust-logo.png",
+      "filename": "HKUST.hk",
+      "name": "Hong Kong University of Science and Technology (Exchange)",
       "program": "Computer Science and Engineering",
       "duration": "Expected 2025",
       "points": [

@@ -1,6 +1,19 @@
 {
   "worklist": [
     {
+      "logo": "logos/amazon-logo.png",
+      "filename": "Amazon.inc",
+      "image": "logos/amazon-logo.png",
+      "position": "Software Development Engineer",
+      "company": "Amazon",
+      "location": "Vancouver, ON",
+      "duration": "May 2025 - August 2025",
+      "team": "To be Determined!",
+      "companysite": "https://www.amazon.ca/",
+      "points": ["Details to be determined when coop starts"],
+      "techstack": ["To be Determined"]
+    },
+    {
       "logo": "logos/shopify-logo.png",
       "filename": "Shopify.inc",
       "image": "logos/shopify-logo.png",
@@ -8,10 +21,10 @@
       "company": "Shopify",
       "location": "Toronto, ON",
       "duration": "January 2025 - April 2025",
-      "team": "To be Determined!",
+      "team": "API Foundations",
       "companysite": "https://www.shopify.com/ca",
       "points": ["Details to be determined when coop starts"],
-      "techstack": ["Ruby", "Ruby on Rails"]
+      "techstack": ["Ruby", "Rails", "GraphQL"]
     },
     {
       "logo": "logos/nuralogix-logo.jpg",
