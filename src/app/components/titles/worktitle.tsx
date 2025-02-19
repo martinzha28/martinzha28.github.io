@@ -1,3 +1,4 @@
+import HoverTooltip from "../../animations/hover";
 import ShowOnScroll from "../../animations/showonscroll";
 
 export default function WorkTitle() {
@@ -10,9 +11,14 @@ export default function WorkTitle() {
       <p className="text-gray-text dark:text-white"> .</p>
       <p className="text-class-yellow-light dark:text-class-yellow-dark"> push</p>
       <p className="text-brackets-pink-light dark:text-brackets-pink-dark"> ( </p>
-      <p className="text-variable-blue-light dark:text-variable-blue-dark underline decoration-wavy decoration-error-red-light dark:decoration-error-red-dark">
-        internship
-      </p>
+      <HoverTooltip defaultObject={
+        <p className="text-variable-blue-light dark:text-variable-blue-dark underline decoration-wavy decoration-error-red-light dark:decoration-error-red-dark">
+          internship
+        </p>
+      }
+        text={"Variable Not Found"} 
+        location="top"
+      />
       <p className="text-brackets-pink-light dark:text-brackets-pink-dark"> ) </p>
       <p className="text-gray-text dark:text-white"> ; </p>
     </ShowOnScroll>

@@ -5,9 +5,10 @@ interface HoverTooltipProps {
     hoverObject?: React.ReactNode;
     text: string;
     link?: string;
+    location?: 'right' | 'top';
 }
 
-const HoverTooltip = ({ defaultObject, hoverObject, text, link }: HoverTooltipProps) => {
+const HoverTooltip = ({ defaultObject, hoverObject, text, link, location = 'right' }: HoverTooltipProps) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const handleClick = () => {
@@ -22,13 +23,15 @@ const HoverTooltip = ({ defaultObject, hoverObject, text, link }: HoverTooltipPr
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={handleClick}
-            style={{ cursor: isHovered ? 'pointer' : 'default' }}
+            style={{ cursor: (isHovered && link) ? 'pointer' : 'default' }}
         >
-            {isHovered ? hoverObject : defaultObject}
+            {(hoverObject && isHovered) ? hoverObject : defaultObject}
             {isHovered && (
-                <div className="absolute inline-block text-xs left-full rounded-lg border-[1px] p-2 m-2
-                bg-backgound-light dark:bg-background-dark border-gray-text dark:border-white text-variable-blue-light dark:text-variable-blue-dark">    
+                <div className={`absolute z-30 inline-block text-xs ${location == 'right' ? "left-full" : "bottom-full"} rounded-lg border-[1px] p-2 m-2 whitespace-nowrap
+                bg-background-light dark:bg-background-dark border-gray-text dark:border-white text-variable-blue-light dark:text-variable-blue-dark`}>
                     {text}
+                    {location == 'right' && <div className="absolute z-40 rotate-45 top-[13px] left-[-5px] bg-background-light dark:bg-background-dark border-l-[1px] border-b-[1px] border-gray-text dark:border-white w-2 h-2"></div>}
+                    {location == 'top' && <div className="absolute z-40 rotate-45 top-[29px] left-[25px] bg-background-light dark:bg-background-dark border-r-[1px] border-b-[1px] border-gray-text dark:border-white w-2 h-2"></div>}
                 </div>
             )}
         </div>
@@ -36,7 +39,3 @@ const HoverTooltip = ({ defaultObject, hoverObject, text, link }: HoverTooltipPr
 };
 
 export default HoverTooltip;
-
-/*                 after:content-[''] after:absolute after:top-1/2 after:right-full 
-                after:border-x-[5px] after:border-t-[5px] after:border-x-transparent after:ml-[-5px]
-                after:border-t-black after:border-r-transparent after:border-b-transparent after:border-l-transparent */

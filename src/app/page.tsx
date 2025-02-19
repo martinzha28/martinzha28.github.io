@@ -49,6 +49,5 @@ export default function Page() {
 // Click image to expand
 // Skeleton and graceful degradation for image: https://www.npmjs.com/package/react-loading-skeleton
 
-// sidebar icons on hover
 // Click on folders in navbar to open close?
 // Nav/table of contents that scrolls as you go down
