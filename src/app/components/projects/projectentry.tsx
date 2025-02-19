@@ -33,12 +33,12 @@ export default function ProjectEntry({
             {subtitle}{" "}
           </p>
           {github && (
-            <a href={github} target="_blank" rel="noopener noreferrer">
+            <a href={github} aria-label={name + " github"} target="_blank" rel="noopener noreferrer">
               <FaGithub color="#70C1FD" />
             </a>
           )}
           {link && (
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a href={link} aria-label={name + " link"} target="_blank" rel="noopener noreferrer">
               <FaLink color="#70C1FD" />
             </a>
           )}

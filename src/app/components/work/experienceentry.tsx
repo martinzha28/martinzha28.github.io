@@ -62,7 +62,7 @@ export default function ExperienceEntry({
                 {" "}
                 (&nbsp;
               </p>
-              <a href={companysite} target="_blank" rel="noopener noreferrer">
+              <a href={companysite} aria-label={company + " site"} target="_blank" rel="noopener noreferrer">
                 <FaLink color="#70C1FD" />
               </a>
               <p className="text-brackets-pink-light dark:text-brackets-pink-dark">
