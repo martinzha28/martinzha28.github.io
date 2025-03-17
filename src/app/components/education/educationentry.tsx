@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ShowOnScroll from "../../animations/showonscroll";
+import BulletPoint from "../bulletpoint";
 
 export type EducationProps = {
   logo: string;
@@ -36,15 +37,17 @@ export default function EducationEntry({
           <p className="text-3xl text-variable-blue-light dark:text-variable-blue-dark">
             {name}
           </p>
-          <p className="text-lg ">
+          <div className="text-lg flex flex-row gap-4 text-class-yellow-light dark:text-class-yellow-dark">
             {" "}
-            <em className="text-string-orange-light dark:text-string-orange-dark">
+            <p className="text-string-orange-light dark:text-string-orange-dark">
               {program}
-            </em>{" "}
-            | {duration}{" "}
-          </p>
+            </p>
+            <p className="">
+              {duration}
+            </p>
+          </div>
           {points.map((point: string, index: number) => {
-            return <p key={"point" + index}> - {point} </p>;
+            return <BulletPoint key={"point" + index}  point={point} />;
           })}
         </div>
       </div>
