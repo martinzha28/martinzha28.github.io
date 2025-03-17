@@ -10,8 +10,12 @@
       "duration": "May 2025 - August 2025",
       "team": "To be Determined!",
       "companysite": "https://www.amazon.ca/",
-      "points": ["Details to be determined when coop starts"],
-      "techstack": ["To be Determined"]
+      "points": [
+        "Details to be determined when coop starts"
+      ],
+      "techstack": [
+        "To be Determined"
+      ]
     },
     {
       "logo": "logos/shopify-logo.png",
@@ -23,8 +27,15 @@
       "duration": "January 2025 - April 2025",
       "team": "API Foundations",
       "companysite": "https://www.shopify.com/ca",
-      "points": ["Details to be determined when coop starts"],
-      "techstack": ["Ruby", "Rails", "GraphQL"]
+      "points": [
+        "Reducing time it takes to `SELECT COUNT(*)` from database",
+        "Adding error metrics + error codes for better internal developer obersvability"
+      ],
+      "techstack": [
+        "Ruby",
+        "Rails",
+        "GraphQL"
+      ]
     },
     {
       "logo": "logos/nuralogix-logo.jpg",
@@ -36,8 +47,16 @@
       "duration": "September 2024 - December 2024",
       "team": "Web Development",
       "companysite": "https://www.nuralogix.ai/",
-      "points": ["Currently working on the first company-wide component library"],
-      "techstack": ["React.js", "StyleX", "Storybook.js"]
+      "points": [
+        "Worked on the first company-wide component library to integrate with all other applications",
+        "Reduced Time-To-Load by using StyleX, Facebook's CSS library",
+        "Made a lot of React components and displayed using Storybook"
+      ],
+      "techstack": [
+        "React.js",
+        "StyleX",
+        "Storybook.js"
+      ]
     },
     {
       "logo": "logos/mmc-logo.jpg",
@@ -49,11 +68,22 @@
       "duration": "December 2023 - May 2024",
       "team": "Enterprise Architecture",
       "companysite": "https://www.marshmclennan.com/",
-      "points": ["First experience with OpenAI API to create back-end BPMN generator", 
-      "Created new features on the \"Case Management Platform\" using Express, React", 
-      "Began development of a front-end component library using Storybook, MUI",
-      "Researched and documented software architectures"],
-      "techstack": ["React.js", "MongoDB", "Express.js", "Node.js", "Next.js", "Cypress", "SASS", "Storybook.js"]
+      "points": [
+        "Created new features on a \"Case Management Platform\" using MERN",
+        "Began development of a front-end component library using React and Storybook",
+        "First experience with OpenAI API to automate creating flowcharts",
+        "Researched and documented software architectures"
+      ],
+      "techstack": [
+        "React.js",
+        "MongoDB",
+        "Express.js",
+        "Node.js",
+        "Next.js",
+        "Cypress",
+        "SASS",
+        "Storybook.js"
+      ]
     },
     {
       "logo": "logos/innovation-lab-logo.jpg",
@@ -65,11 +95,22 @@
       "duration": "May 2023 - August 2023",
       "team": "Development",
       "companysite": "https://www.wsib.ca/en",
-      "points": ["Worked on scanning audiogram form using Azure OCR", 
-      "Used React.js and Tailwind CSS to create front-end website", 
-      "Developed endpoints to connect to Azure Database",
-      "Tried creating a proof-of-concept for a Generative AI chatbot"],
-      "techstack": ["Azure", "React.js", "Express.js", "Flask", "Python", "Node.js", "TypeScript", "PrivateGPT"]
+      "points": [
+        "Created online audiogram form using React.js and Tailwind CSS for website",
+        "Worked on using Azure Optical Character Recognition to scan audiogram pdfs",
+        "Developed endpoints to connect to Azure Database",
+        "Created a proof-of-concept for a Generative AI chatbot"
+      ],
+      "techstack": [
+        "Azure",
+        "React.js",
+        "Express.js",
+        "Flask",
+        "Python",
+        "Node.js",
+        "TypeScript",
+        "PrivateGPT"
+      ]
     },
     {
       "logo": "logos/genesys-logo.jpg",
@@ -81,10 +122,20 @@
       "duration": "May 2022 - August 2022",
       "team": "Workforce Engagement Management",
       "companysite": "https://www.genesys.com/",
-      "points": ["First-ever experience with large codebase! Got to work on refactoring old code",
-      "Gathered ticket status, documented bugs, and tracked product information",
-      "Automated queries for SQL and exported data into nice-looking Excel spreadsheets"],
-      "techstack": ["Java", "Selenium", "Bash", "Excel", "Microsoft SSMS", "Docker", "Confluence"]
+      "points": [
+        "First-ever experience with large codebase! Got to work on refactoring old test suites",
+        "Gathered ticket status, documented bugs, and tracked product information",
+        "Automated queries for SQL and exported data into nice-looking Excel spreadsheets"
+      ],
+      "techstack": [
+        "Java",
+        "Selenium",
+        "Bash",
+        "Excel",
+        "Microsoft SSMS",
+        "Docker",
+        "Confluence"
+      ]
     }
   ]
 }
