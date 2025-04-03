@@ -27,7 +27,7 @@ export default function AboutMe() {
         <BulletPoint point={"AWS Certified"} />
         <p className="text-gray-text dark:text-white">
           Welcome to my Personal Portfolio! I'm a 4A Computer Science Student
-          studying at the University ofWaterloo!
+          studying at the University of Waterloo!
         </p>
         <p className="text-gray-text dark:text-white">
           Currently I am contributing to Shopify's API Foundations team, specializing in GraphQL and API development.
