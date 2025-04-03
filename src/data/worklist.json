@@ -20,7 +20,7 @@
     {
       "logo": "logos/shopify-logo.png",
       "filename": "Shopify.inc",
-      "image": "logos/shopify-logo.png",
+      "image": "images/shopify-team.jpg",
       "position": "Software Engineer",
       "company": "Shopify",
       "location": "Toronto, ON",
@@ -40,7 +40,7 @@
     {
       "logo": "logos/nuralogix-logo.jpg",
       "filename": "Nuralogix.ai",
-      "image": "logos/nuralogix-logo.jpg",
+      "image": "images/nuralogix.jpg",
       "position": "Frontend Developer",
       "company": "Nuralogix",
       "location": "Toronto, ON",
