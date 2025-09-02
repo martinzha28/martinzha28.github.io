@@ -1,20 +1,23 @@
 {
   "worklist": [
     {
-      "logo": "logos/amazon-logo.png",
-      "filename": "Amazon.inc",
-      "image": "logos/amazon-logo.png",
+      "logo": "logos/aws-logo.png",
+      "filename": "Amazon.aws",
+      "image": "images/aws-team.jpg",
       "position": "Software Development Engineer",
-      "company": "Amazon",
+      "company": "Amazon Web Services",
       "location": "Vancouver, ON",
       "duration": "May 2025 - August 2025",
-      "team": "To be Determined!",
-      "companysite": "https://www.amazon.ca/",
+      "team": "Simple Queue Service (SQS)",
+      "companysite": "https://aws.amazon.com/sqs/",
       "points": [
-        "Details to be determined when coop starts"
+        "Upgraded 14 caches to improve latency, hitrate, and CPU usage",
+        "Analyzed the cache's low-level concurrency problems and solved race conditions"
       ],
       "techstack": [
-        "To be Determined"
+        "Spring",
+        "Java",
+        "Caffeine Cache"
       ]
     },
     {
@@ -43,7 +46,7 @@
       "image": "images/nuralogix.jpg",
       "position": "Frontend Developer",
       "company": "Nuralogix",
-      "location": "Toronto, ON",
+      "location": "Remote",
       "duration": "September 2024 - December 2024",
       "team": "Web Development",
       "companysite": "https://www.nuralogix.ai/",
