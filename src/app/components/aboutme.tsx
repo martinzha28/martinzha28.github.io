@@ -26,12 +26,12 @@ export default function AboutMe() {
         <BulletPoint point={"Computer Science Student"} />
         <BulletPoint point={"AWS Certified"} />
         <p className="text-gray-text dark:text-white">
-          Welcome to my Personal Portfolio! I'm a 4A Computer Science Student
+          Welcome to my Personal Portfolio! I'm a forth year Computer Science Student
           studying at the University of Waterloo!
         </p>
         <p className="text-gray-text dark:text-white">
-          Currently I am contributing to Shopify's API Foundations team, specializing in GraphQL and API development.
-          Previously, I worked in developing scalable component libraries during internships at Nuralogix AI and Marsh McLennan.
+          This year, I contributed to upgrading caching at AWS SQS and improving the GraphQL endpoint layer at Shopify. 
+          Before that, I built scalable component libraries during internships at Nuralogix AI and Marsh McLennan. 
         </p>
         <p className="text-gray-text dark:text-white">
           On the side, I'm working a web application 🤭 to be released when ready...
